@@ -89,3 +89,6 @@ if has("gui_running")
         \ '\=eval(submatch(0)-1)',
         \ '')<CR>
 endif
+
+imap <C-Space> <C-x><C-o>
+imap <C-@> <C-Space>
