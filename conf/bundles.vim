@@ -9,6 +9,8 @@ Bundle 'ap/vim-css-color'
 
 Bundle 'mutewinter/vim-indent-guides'
 
+Bundle 'ervandew/supertab'
+
 Bundle 'scrooloose/nerdcommenter'
 
 Bundle 'kien/ctrlp.vim'
