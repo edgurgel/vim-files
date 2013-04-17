@@ -1,4 +1,4 @@
-let g:SuperTabDefaultCompletionType = "<c-x><c-u>"
+"let g:SuperTabDefaultCompletionType = "<c-x><c-u>"
 "let g:SuperTabClosePreviewOnPopupClose = 1
-let g:SuperTabMappingForward = "<c-space>"
-let g:SuperTabMappingBackward = "<s-c-space>"
+"let g:SuperTabMappingForward = "<c-space>"
+"let g:SuperTabMappingBackward = "<s-c-space>"
