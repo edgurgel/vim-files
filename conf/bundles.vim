@@ -52,7 +52,6 @@ Bundle 'szw/vim-tags'
 
 Bundle 'othree/xml.vim'
 
-Bundle 'gcmt/psearch.vim'
 Bundle 'mattn/webapi-vim'
 
 " Git related
@@ -69,5 +68,9 @@ Bundle 'tpope/vim-rails'
 Bundle 'tpope/vim-bundler'
 Bundle 'nelstrom/vim-textobj-rubyblock'
 
+" Erlang related
+Bundle 'jimenezrick/vimerl'
+
 " Themes
 Bundle 'mrtazz/molokai.vim'
+

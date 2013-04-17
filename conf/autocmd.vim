@@ -34,3 +34,4 @@ func! DeleteTrailingWS()
 endfunc
 au BufWrite * :call DeleteTrailingWS()
 
+au FileType erlang let b:delimitMate_matchpairs = "<<:>>"
