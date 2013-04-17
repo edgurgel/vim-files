@@ -43,14 +43,14 @@ vnoremap <A-j> :m '>+1<CR>gv=gv
 vnoremap <A-k> :m '<-2<CR>gv=gv
 
 " Disable home and end keys
-map <home> <nop>
-map <end> <nop>
+"map <home> <nop>
+"map <end> <nop>
 
 " Disable arrow keys
-map <up> <nop>
-map <down> <nop>
-map <left> <nop>
-map <right> <nop>
+"map <up> <nop>
+"map <down> <nop>
+"map <left> <nop>
+"map <right> <nop>
 
 " Enter toggles a line comment
 nnoremap <CR> :call NERDComment('n', 'Toggle')<CR>
