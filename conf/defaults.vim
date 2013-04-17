@@ -11,8 +11,15 @@ set cursorline
 if isdirectory(expand("~/.vim/bundle/molokai.vim"))
   colorscheme molokai
 else
-  colorscheme delek
+  colorscheme desert
 endif
+
+if has("gui_running")
+    colorscheme molokai
+else
+    colorscheme desert
+endif
+
 
 filetype plugin indent on
 
@@ -39,10 +46,6 @@ endif
 " Display extra whitespace
 set list listchars=tab:▸\ ,trail:…
 
-" Backup directory
-set backupdir=$HOME/.vim/.swp-files//
-set directory=$HOME/.vim/.swp-files//
-
 " Highlighting lines longer than 80 columns
 highlight OverLength ctermbg=darkred ctermfg=white guibg=#592929
 match OverLength /\%>80v.\+/
@@ -54,3 +57,7 @@ set autoread
 " Automatic folding
 set foldmethod=syntax
 set nofoldenable
+
+"No backups
+set nobackup
+set noswapfile

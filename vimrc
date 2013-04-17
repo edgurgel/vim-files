@@ -1,5 +1,3 @@
-let mapleader=","
-
 source $HOME/.vim/conf/init.vim
 source $HOME/.vim/conf/autocmd.vim
 source $HOME/.vim/conf/bundles.vim
