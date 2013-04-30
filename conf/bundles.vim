@@ -74,3 +74,5 @@ Bundle 'jimenezrick/vimerl'
 " Themes
 Bundle 'mrtazz/molokai.vim'
 
+" Slim
+Bundle 'slim-template/vim-slim'
