@@ -61,3 +61,13 @@ set nofoldenable
 "No backups
 set nobackup
 set noswapfile
+
+" Font settings taca o pau
+let g:default_font = 'Source\ Code\ Pro'
+if has("gui_macvim")
+  let g:default_font_size = 14
+  let g:font_separator = ':h'
+else
+  let g:default_font_size = 12
+  let g:font_separator = '\ '
+endif

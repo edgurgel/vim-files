@@ -73,6 +73,10 @@ fun! OpenVIMFiles()
 endf
 nnoremap <leader>vi :call OpenVIMFiles()<CR>
 
+fun! InitFont()
+  exe "set guifont=" . g:default_font . g:font_separator . g:default_font_size
+endfun
+
 " FIXME find some use for K(help) and Q(ex mode)
 nnoremap Q <nop>
 nnoremap K <nop>
@@ -88,6 +92,7 @@ if has("gui_running")
         \ '\d\+',
         \ '\=eval(submatch(0)-1)',
         \ '')<CR>
+  nnoremap =0 :call InitFont()<CR>
 endif
 
 imap <C-Space> <C-x><C-o>
