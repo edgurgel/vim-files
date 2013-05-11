@@ -54,6 +54,8 @@ Bundle 'szw/vim-tags'
 Bundle 'othree/xml.vim'
 
 Bundle 'mattn/webapi-vim'
+Bundle 'nelstrom/vim-visual-star-search'
+Bundle 'iurifq/vim-travis-ci'
 
 " Git related
 Bundle 'tpope/vim-fugitive'
