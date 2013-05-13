@@ -1,4 +1,5 @@
 syn on " colored syntax
+let g:session_autoload = 'no'
 
 set number " line numbers
 if has("gui_macvim")
