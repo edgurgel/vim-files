@@ -79,3 +79,6 @@ Bundle 'mrtazz/molokai.vim'
 
 " Slim
 Bundle 'slim-template/vim-slim'
+
+" Coffeescript
+Bundle 'kchmck/vim-coffee-script'
