@@ -75,7 +75,7 @@ Bundle 'nelstrom/vim-textobj-rubyblock'
 Bundle 'jimenezrick/vimerl'
 
 " Themes
-Bundle 'mrtazz/molokai.vim'
+Bundle 'tomasr/molokai'
 
 " Slim
 Bundle 'slim-template/vim-slim'

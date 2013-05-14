@@ -9,7 +9,7 @@ else
 endif
 set cursorline
 
-if isdirectory(expand("~/.vim/bundle/molokai.vim"))
+if isdirectory(expand("~/.vim/bundle/molokai"))
   colorscheme molokai
 else
   colorscheme desert
