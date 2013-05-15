@@ -72,3 +72,7 @@ else
   let g:default_font_size = 12
   let g:font_separator = '\ '
 endif
+
+" Split the right way
+set splitbelow
+set splitright
