@@ -8,8 +8,6 @@ Bundle 'tpope/vim-endwise'
 
 Bundle 'ap/vim-css-color'
 
-Bundle 'mutewinter/vim-indent-guides'
-
 Bundle 'ervandew/supertab'
 
 Bundle 'scrooloose/nerdcommenter'
