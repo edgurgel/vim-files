@@ -1,82 +1,84 @@
-Bundle 'gmarik/vundle'
+NeoBundleFetch 'Shougo/neobundle.vim'
 
-Bundle 'tpope/vim-unimpaired'
-Bundle 'tpope/vim-surround'
-Bundle 'tpope/vim-repeat'
-Bundle 'tpope/vim-dispatch'
-Bundle 'tpope/vim-endwise'
+NeoBundle 'tpope/vim-unimpaired'
+NeoBundle 'tpope/vim-surround'
+NeoBundle 'tpope/vim-repeat'
+NeoBundle 'tpope/vim-dispatch'
+NeoBundle 'tpope/vim-endwise'
+NeoBundle 'tpope/vim-abolish'
 
-Bundle 'ap/vim-css-color'
+NeoBundle 'ap/vim-css-color'
 
-Bundle 'ervandew/supertab'
+NeoBundle 'ervandew/supertab'
 
-Bundle 'scrooloose/nerdcommenter'
+NeoBundle 'scrooloose/nerdcommenter'
 
-Bundle 'kien/ctrlp.vim'
-Bundle 'jasoncodes/ctrlp-modified.vim'
+NeoBundle 'kien/ctrlp.vim'
+NeoBundle 'jasoncodes/ctrlp-modified.vim'
 
-Bundle 'majutsushi/tagbar'
+NeoBundle 'majutsushi/tagbar'
 
-Bundle "MarcWeber/vim-addon-mw-utils"
-Bundle "tomtom/tlib_vim"
-Bundle "honza/vim-snippets"
-Bundle "garbas/vim-snipmate"
+NeoBundle "MarcWeber/vim-addon-mw-utils"
+NeoBundle "tomtom/tlib_vim"
+NeoBundle "honza/vim-snippets"
+NeoBundle "garbas/vim-snipmate"
 
-Bundle 'skwp/vim-rspec'
+NeoBundle 'Raimondi/delimitMate'
 
-Bundle 'Raimondi/delimitMate'
+NeoBundle 'Lokaltog/vim-powerline'
 
-Bundle 'Lokaltog/vim-powerline'
+NeoBundle 'MarcWeber/vim-addon-actions'
+NeoBundle 'rosstimson/scala-vim-support'
 
-Bundle 'MarcWeber/vim-addon-actions'
-Bundle 'MarcWeber/vim-addon-sbt'
-Bundle 'rosstimson/scala-vim-support'
+NeoBundle 'sjl/gundo.vim'
 
-Bundle 'sjl/gundo.vim'
+NeoBundle 'scrooloose/syntastic'
 
-Bundle 'xolox/vim-session'
+NeoBundle 'Spaceghost/vim-matchit'
+NeoBundle 'kana/vim-textobj-user'
 
-Bundle 'scrooloose/syntastic'
+NeoBundle 'bkad/CamelCaseMotion'
 
-Bundle 'rodjek/vim-puppet'
+NeoBundle 'szw/vim-tags'
 
-Bundle 'Spaceghost/vim-matchit'
-Bundle 'kana/vim-textobj-user'
+NeoBundle 'othree/xml.vim'
 
-Bundle 'bkad/CamelCaseMotion'
+NeoBundle 'mattn/webapi-vim'
 
-Bundle 'vim-scripts/loremipsum'
+NeoBundle 'nelstrom/vim-visual-star-search'
 
-Bundle 'szw/vim-tags'
+NeoBundle 'iurifq/vim-travis-ci'
 
-Bundle 'othree/xml.vim'
+NeoBundle 'mjbrownie/swapit'
 
-Bundle 'mattn/webapi-vim'
-Bundle 'nelstrom/vim-visual-star-search'
-Bundle 'iurifq/vim-travis-ci'
+NeoBundle 'suan/vim-instant-markdown'
+
+NeoBundle 'Shougo/vimproc'
+NeoBundle 'Shougo/vimshell.vim'
 
 " Git related
-Bundle 'tpope/vim-fugitive'
-Bundle 'gregsexton/gitv'
-Bundle 'airblade/vim-gitgutter'
-Bundle 'gilligan/textobj-gitgutter'
-Bundle 'mattn/gist-vim'
+NeoBundle 'tpope/vim-fugitive'
+NeoBundle 'gregsexton/gitv'
+NeoBundle 'airblade/vim-gitgutter'
+NeoBundle 'gilligan/textobj-gitgutter'
+NeoBundle 'mattn/gist-vim'
 
 " Ruby related
-Bundle 'vim-ruby/vim-ruby'
-Bundle 'ecomba/vim-ruby-refactoring'
-Bundle 'tpope/vim-rails'
-Bundle 'tpope/vim-bundler'
-Bundle 'nelstrom/vim-textobj-rubyblock'
+NeoBundle 'vim-ruby/vim-ruby'
+NeoBundle 'rking/vim-ruby-refactoring'
+NeoBundle 'tpope/vim-rails'
+NeoBundle 'nelstrom/vim-textobj-rubyblock'
 
 " Erlang related
-Bundle 'jimenezrick/vimerl'
+NeoBundle 'jimenezrick/vimerl'
 
 " Themes
-Bundle 'tomasr/molokai'
+NeoBundle 'tomasr/molokai'
 
 " Slim
-Bundle 'slim-template/vim-slim'
+NeoBundle 'slim-template/vim-slim'
 
 " Coffeescript
-Bundle 'kchmck/vim-coffee-script'
+NeoBundle 'kchmck/vim-coffee-script'
+
+NeoBundleCheck
