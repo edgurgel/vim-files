@@ -78,6 +78,9 @@ NeoBundle 'nelstrom/vim-textobj-rubyblock', { 'depends' : [
 " Erlang related
 NeoBundle 'jimenezrick/vimerl'
 
+" Elixir related
+NeoBundle 'elixir-lang/vim-elixir'
+
 " Themes
 NeoBundle 'tomasr/molokai'
 

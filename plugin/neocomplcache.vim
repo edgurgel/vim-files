@@ -1,4 +1,4 @@
-let g:neocomplcache_enable_at_startup = 1
+let g:neocomplcache_enable_at_startup = 0
 let g:neocomplcache_enable_smart_case = 1
 
 imap <expr><TAB> neosnippet#expandable_or_jumpable() ?
