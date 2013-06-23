@@ -32,6 +32,8 @@ NeoBundle 'bkad/CamelCaseMotion'
 
 NeoBundle 'szw/vim-tags'
 
+NeoBundle 'sickill/vim-pasta'
+
 NeoBundle 'othree/xml.vim'
 
 NeoBundle 'nelstrom/vim-visual-star-search'
@@ -73,6 +75,7 @@ NeoBundle 'nelstrom/vim-textobj-rubyblock', { 'depends' : [
       \ 'kana/vim-textobj-user',
       \ 'Spaceghost/vim-matchit'
       \ ]}
+NeoBundle 'iurifq/ctrlp-rails.vim', {'depends' : 'kien/ctrlp.vim' }
 
 " Erlang related
 NeoBundle 'jimenezrick/vimerl'
@@ -85,5 +88,7 @@ NeoBundle 'slim-template/vim-slim'
 
 " Coffeescript
 NeoBundle 'kchmck/vim-coffee-script'
+
+NeoBundle 'elixir-lang/vim-elixir'
 
 NeoBundleCheck
