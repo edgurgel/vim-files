@@ -24,8 +24,6 @@ NeoBundle 'Lokaltog/vim-powerline'
 
 NeoBundle 'rosstimson/scala-vim-support'
 
-NeoBundle 'sjl/gundo.vim'
-
 NeoBundle 'scrooloose/syntastic'
 
 NeoBundle 'bkad/CamelCaseMotion'
@@ -68,6 +66,7 @@ NeoBundle 'gilligan/textobj-gitgutter'
 NeoBundle 'mattn/gist-vim', { 'depends' : 'mattn/webapi-vim' }
 
 " Ruby related
+NeoBundle 'jgdavey/vim-blockle'
 NeoBundle 'vim-ruby/vim-ruby'
 NeoBundle 'rking/vim-ruby-refactoring', { 'depends' : 'Spaceghost/vim-matchit'}
 NeoBundle 'tpope/vim-rails'
