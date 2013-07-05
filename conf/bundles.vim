@@ -81,6 +81,7 @@ NeoBundle 'jimenezrick/vimerl'
 
 " Themes
 NeoBundle 'tomasr/molokai'
+NeoBundle 'chriskempson/vim-tomorrow-theme'
 
 " Slim
 NeoBundle 'slim-template/vim-slim'
