@@ -24,13 +24,13 @@ NeoBundle 'Lokaltog/vim-powerline'
 
 NeoBundle 'rosstimson/scala-vim-support'
 
-NeoBundle 'sjl/gundo.vim'
-
 NeoBundle 'scrooloose/syntastic'
 
 NeoBundle 'bkad/CamelCaseMotion'
 
 NeoBundle 'szw/vim-tags'
+
+NeoBundle 'sickill/vim-pasta'
 
 NeoBundle 'othree/xml.vim'
 
@@ -67,6 +67,7 @@ NeoBundle 'gilligan/textobj-gitgutter'
 NeoBundle 'mattn/gist-vim', { 'depends' : 'mattn/webapi-vim' }
 
 " Ruby related
+NeoBundle 'jgdavey/vim-blockle'
 NeoBundle 'vim-ruby/vim-ruby'
 NeoBundle 'rking/vim-ruby-refactoring', { 'depends' : 'Spaceghost/vim-matchit'}
 NeoBundle 'tpope/vim-rails'
@@ -74,6 +75,7 @@ NeoBundle 'nelstrom/vim-textobj-rubyblock', { 'depends' : [
       \ 'kana/vim-textobj-user',
       \ 'Spaceghost/vim-matchit'
       \ ]}
+NeoBundle 'iurifq/ctrlp-rails.vim', {'depends' : 'kien/ctrlp.vim' }
 
 " Erlang related
 NeoBundle 'jimenezrick/vimerl'
@@ -83,11 +85,14 @@ NeoBundle 'elixir-lang/vim-elixir'
 
 " Themes
 NeoBundle 'tomasr/molokai'
+NeoBundle 'chriskempson/tomorrow-theme', {'rtp': 'vim/'}
 
 " Slim
 NeoBundle 'slim-template/vim-slim'
 
 " Coffeescript
 NeoBundle 'kchmck/vim-coffee-script'
+
+NeoBundle 'elixir-lang/vim-elixir'
 
 NeoBundleCheck
