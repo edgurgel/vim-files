@@ -62,8 +62,9 @@ NeoBundle 'Shougo/neosnippet'
 " Git related
 NeoBundle 'tpope/vim-fugitive'
 NeoBundle 'gregsexton/gitv'
-NeoBundle 'airblade/vim-gitgutter'
-NeoBundle 'gilligan/textobj-gitgutter'
+"NeoBundle 'airblade/vim-gitgutter'
+"NeoBundle 'gilligan/textobj-gitgutter'
+NeoBundle 'mhinz/vim-signify'
 NeoBundle 'mattn/gist-vim', { 'depends' : 'mattn/webapi-vim' }
 
 " Ruby related
