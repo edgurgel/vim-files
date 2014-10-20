@@ -49,7 +49,7 @@ set list listchars=tab:▸\ ,trail:…
 
 " Highlighting lines longer than 80 columns
 highlight OverLength ctermbg=darkred ctermfg=white guibg=#592929
-match OverLength /\%>80v.\+/
+match OverLength /\%>100v.\+/
 set scrolloff=10
 
 " Automatically reload files if they were modified outside VIM
