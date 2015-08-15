@@ -9,18 +9,11 @@ else
 endif
 set cursorline
 
-if isdirectory(expand("~/.vim/bundle/molokai"))
+if isdirectory(expand("~/.nvim/bundle/molokai"))
   colorscheme molokai
 else
   colorscheme desert
 endif
-
-if has("gui_running")
-    colorscheme molokai
-else
-    colorscheme desert
-endif
-
 
 filetype plugin indent on
 
