@@ -1,14 +1,14 @@
 ## Installation
 
 ```console
-git clone git://github.com/Shougo/neobundle.vim.git bundle/neobundle.vim
+curl -fLo autoload/plug.vim --create-dirs \
+    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 ```
 
 ## Plugins
 
 The most important plugins I use are:
 
-* [Vundle] - nice and simple package manager
 * [unimpaired.vim] - many useful mappings for back and forth operations
 * [surround.vim] - modify surrounding delimiters with a single keystroke
 * [repeat.vim] - add repeat funcionality with `.` command for many of Tim Pope's
@@ -114,7 +114,7 @@ are placed in `conf/shortcuts.vim` file.
 ### Plugin settings
 
 Each plugin has its entry in `conf/bundles.vim` file. This file is going to be
-used by [Vundle]. Plugins that need custom settings have a file with its name in
+used by [vim-plug]. Plugins that need custom settings have a file with its name in
 `plugin` directory. All shortcuts plugins, plugin variables will be placed there.
 Vim automatically loads all these files when it is starting up.
 

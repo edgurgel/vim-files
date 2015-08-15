@@ -3,3 +3,5 @@ plugin/eclim.vim
 sessions
 eclim
 bundle/*
+autoload
+plugged

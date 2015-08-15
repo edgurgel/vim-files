@@ -1,4 +1,4 @@
-syn on " colored syntax
+syntax on " colored syntax
 let g:session_autoload = 'no'
 
 set number " line numbers
@@ -9,7 +9,7 @@ else
 endif
 set cursorline
 
-if isdirectory(expand("~/.nvim/bundle/molokai"))
+if isdirectory(expand("~/.nvim/plugged/molokai"))
   colorscheme molokai
 else
   colorscheme desert
