@@ -25,6 +25,9 @@ Plug 'sickill/vim-pasta'
 
 Plug 'mjbrownie/swapit'
 
+Plug 'janko-m/vim-test'
+Plug 'kassio/neoterm'
+
 " Git related
 Plug 'tpope/vim-fugitive'
 Plug 'mhinz/vim-signify'
