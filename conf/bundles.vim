@@ -18,7 +18,7 @@ Plug 'Raimondi/delimitMate'
 
 Plug 'bling/vim-airline'
 
-Plug 'scrooloose/syntastic'
+Plug 'benekastah/neomake', { 'on': 'Neomake' }
 
 Plug 'bkad/CamelCaseMotion'
 
