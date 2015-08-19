@@ -25,6 +25,7 @@ map <leader>tn :tabnew<CR>
 map <leader>to :tabonly<CR>
 
 " tab navigation
+tnoremap <Esc> <C-\><C-n>
 nnoremap <TAB> gt
 nnoremap <S-TAB> gT
 
