@@ -28,6 +28,8 @@ Plug 'mjbrownie/swapit'
 Plug 'janko-m/vim-test'
 Plug 'kassio/neoterm'
 
+Plug 'kshenoy/vim-signature'
+
 " Git related
 Plug 'tpope/vim-fugitive'
 Plug 'mhinz/vim-signify'
