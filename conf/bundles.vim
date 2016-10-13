@@ -30,6 +30,8 @@ Plug 'kassio/neoterm'
 
 Plug 'kshenoy/vim-signature'
 
+Plug 'ntpeters/vim-better-whitespace'
+
 " Git related
 Plug 'tpope/vim-fugitive'
 Plug 'mhinz/vim-signify'

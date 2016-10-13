@@ -26,13 +26,7 @@ au FileType xml setlocal foldmethod=syntax
 
 au BufReadPost * set bufhidden=delete
 
-" Remove trailling white spaces on saving
-func! DeleteTrailingWS()
-    exe "normal mz"
-    %s/\s\+$//ge
-    exe "normal `z"
-endfunc
-au BufWrite * :call DeleteTrailingWS()
+autocmd BufWritePre * StripWhitespace
 
 au FileType erlang let b:delimitMate_matchpairs = "<<:>>"
 autocmd! BufWritePost * Neomake
