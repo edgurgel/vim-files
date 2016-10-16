@@ -28,6 +28,8 @@ map <leader>to :tabonly<CR>
 tnoremap <Esc> <C-\><C-n>
 nnoremap <TAB> gt
 nnoremap <S-TAB> gT
+tnoremap <TAB> gt
+tnoremap <S-TAB> gT
 
 " W also saves
 command! W w
