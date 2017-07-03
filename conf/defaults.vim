@@ -40,9 +40,10 @@ endif
 " Display extra whitespace
 set list listchars=tab:▸\ ,trail:…
 
-" Highlighting lines longer than 80 columns
+" Highlighting lines longer than 120 columns
+set colorcolumn=120
 highlight OverLength ctermbg=darkred ctermfg=white guibg=#592929
-match OverLength /\%>100v.\+/
+match OverLength /\%>120v.\+/
 set scrolloff=10
 
 " Automatically reload files if they were modified outside VIM
