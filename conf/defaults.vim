@@ -70,3 +70,6 @@ endif
 " Split the right way
 set splitbelow
 set splitright
+
+" Incremental substitution
+set inccommand=nosplit
