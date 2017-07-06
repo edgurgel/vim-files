@@ -73,3 +73,6 @@ set splitright
 
 " Incremental substitution
 set inccommand=nosplit
+
+" Enable mouse interaction
+set mouse=a
