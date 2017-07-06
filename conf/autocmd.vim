@@ -28,5 +28,4 @@ au BufReadPost * set bufhidden=delete
 
 autocmd BufWritePre * StripWhitespace
 
-au FileType erlang let b:delimitMate_matchpairs = "<<:>>"
 autocmd! BufWritePost * Neomake
