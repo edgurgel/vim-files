@@ -44,7 +44,7 @@ Plug 'Spaceghost/vim-matchit' | Plug 'rking/vim-ruby-refactoring', { 'for': 'rub
 Plug 'Spaceghost/vim-matchit' | Plug 'kana/vim-textobj-user' | Plug 'nelstrom/vim-textobj-rubyblock', { 'for': 'ruby' }
 
 " Erlang related
-Plug 'jimenezrick/vimerl'
+Plug 'vim-erlang/vim-erlang-runtime'
 
 " Elixir related
 Plug 'elixir-lang/vim-elixir'
