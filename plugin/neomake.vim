@@ -8,3 +8,5 @@ let g:neomake_warning_sign = {
 let g:neomake_error_sign = {
   \ 'texthl': 'Error',
   \ }
+
+call neomake#configure#automake('nwr', 250)
