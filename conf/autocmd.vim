@@ -29,5 +29,3 @@ au FileType xml setlocal foldmethod=syntax
 au BufReadPost * set bufhidden=delete
 
 autocmd BufWritePre * StripWhitespace
-
-autocmd! BufWritePost * Neomake
