@@ -17,7 +17,7 @@ Plug 'Raimondi/delimitMate'
 
 Plug 'bling/vim-airline'
 
-Plug 'benekastah/neomake', { 'on': 'Neomake' }
+Plug 'benekastah/neomake'
 
 Plug 'bkad/CamelCaseMotion'
 
@@ -34,6 +34,7 @@ Plug 'ntpeters/vim-better-whitespace'
 
 " Git related
 Plug 'tpope/vim-fugitive'
+Plug 'tpope/vim-rhubarb'
 Plug 'mhinz/vim-signify'
 Plug 'mattn/webapi-vim' | Plug 'mattn/gist-vim'
 
