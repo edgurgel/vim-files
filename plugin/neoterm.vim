@@ -6,4 +6,3 @@ noremap <leader>r :TREPLSendFile<CR>
 nnoremap <leader>tc :call neoterm#close()<cr>
 " clear terminal
 nnoremap <leader>tl :call neoterm#clear()<cr>
-let g:neoterm_position = 'vertical'

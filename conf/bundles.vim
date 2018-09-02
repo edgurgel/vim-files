@@ -49,6 +49,11 @@ Plug 'vim-erlang/vim-erlang-runtime'
 
 " Elixir related
 Plug 'elixir-lang/vim-elixir'
+Plug 'mhinz/vim-mix-format'
+
+" Javascript related
+Plug 'pangloss/vim-javascript'
+Plug 'mxw/vim-jsx'
 
 " Themes
 Plug 'tomasr/molokai'
