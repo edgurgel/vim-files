@@ -32,6 +32,8 @@ Plug 'kshenoy/vim-signature'
 
 Plug 'ntpeters/vim-better-whitespace'
 
+Plug 'w0rp/ale'
+
 " Git related
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-rhubarb'
@@ -41,6 +43,7 @@ Plug 'mattn/webapi-vim' | Plug 'mattn/gist-vim'
 " Ruby related
 Plug 'jgdavey/vim-blockle', { 'for': 'ruby' }
 Plug 'vim-ruby/vim-ruby', { 'for': 'ruby' }
+Plug 'tpope/vim-rails'
 Plug 'Spaceghost/vim-matchit' | Plug 'rking/vim-ruby-refactoring', { 'for': 'ruby' }
 Plug 'Spaceghost/vim-matchit' | Plug 'kana/vim-textobj-user' | Plug 'nelstrom/vim-textobj-rubyblock', { 'for': 'ruby' }
 
@@ -50,6 +53,7 @@ Plug 'vim-erlang/vim-erlang-runtime'
 " Elixir related
 Plug 'elixir-lang/vim-elixir'
 Plug 'mhinz/vim-mix-format'
+Plug 'GrzegorzKozub/vim-elixirls', { 'do': ':ElixirLsCompileSync' }
 
 " Javascript related
 Plug 'pangloss/vim-javascript'
