@@ -34,6 +34,8 @@ Plug 'ntpeters/vim-better-whitespace'
 
 Plug 'w0rp/ale'
 
+Plug 'scrooloose/nerdtree'
+
 " Git related
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-rhubarb'
@@ -62,4 +64,8 @@ Plug 'mxw/vim-jsx'
 " Themes
 Plug 'tomasr/molokai'
 
+" Docs
+Plug 'rizzatti/dash.vim'
+
 call plug#end()
+
