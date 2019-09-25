@@ -11,3 +11,10 @@ let g:ale_elixir_elixir_ls_config = { 'elixirLS': { 'dialyzerEnabled': v:false }
 
 let g:ale_linters = {}
 let g:ale_linters.elixir = [ 'credo', 'elixir-ls' ]
+let g:ale_completion_enabled = 1
+let g:ale_set_balloons = 1
+set omnifunc=ale#completion#OmniFunc
+
+autocmd FileType elixir,eelixir nnoremap gf :ALEGoToDefinition<CR>
+autocmd FileType elixir,eelixir nnoremap <C-w>gf :ALEGoToDefinitionInTab<CR>
+autocmd FileType elixir,eelixir nnoremap <C-\> :ALEFindReferences<CR>
