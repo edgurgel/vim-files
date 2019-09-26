@@ -1,0 +1,13 @@
+{
+  "coc.preferences.jumpCommand": "tabe",
+  "coc.preferences.enableFloatHighlight": true,
+  "solargraph.completion": true,
+  "solargraph.definitions" : true,
+  "solargraph.hover": true,
+  "languageserver": {
+    "elixirLS": {
+      "command": "/Users/eduardo/dev/vim-files/plugged/vim-elixirls/elixir-ls/release/language_server.sh",
+      "filetypes": ["elixir", "eelixir"]
+    }
+  }
+}

@@ -26,13 +26,20 @@ Plug 'sickill/vim-pasta'
 Plug 'mjbrownie/swapit'
 
 Plug 'janko-m/vim-test'
+Plug 'tpope/vim-dispatch'
 Plug 'kassio/neoterm'
 
 Plug 'kshenoy/vim-signature'
 
 Plug 'ntpeters/vim-better-whitespace'
 
+" LSP
+Plug 'neoclide/coc.nvim', {'tag': '*', 'branch': 'release'}
 Plug 'w0rp/ale'
+" Plug 'autozimu/LanguageClient-neovim', {
+    " \ 'branch': 'next',
+    " \ 'do': 'bash install.sh',
+    " \ }
 
 Plug 'scrooloose/nerdtree'
 
