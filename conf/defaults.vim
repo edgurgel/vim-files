@@ -9,6 +9,11 @@ else
 endif
 set cursorline
 
+if has("gui_vimr")
+  " Here goes some VimR specific settings like
+  set pumblend=20
+endif
+
 if isdirectory(expand("~/.nvim/plugged/molokai"))
   colorscheme molokai
 else
