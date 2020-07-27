@@ -29,6 +29,8 @@ Plug 'janko-m/vim-test'
 Plug 'tpope/vim-dispatch'
 Plug 'kassio/neoterm'
 
+Plug 'wsdjeg/FlyGrep.vim'
+
 Plug 'kshenoy/vim-signature'
 
 Plug 'ntpeters/vim-better-whitespace'
@@ -53,6 +55,7 @@ Plug 'mattn/webapi-vim' | Plug 'mattn/gist-vim'
 Plug 'jgdavey/vim-blockle', { 'for': 'ruby' }
 Plug 'vim-ruby/vim-ruby', { 'for': 'ruby' }
 Plug 'tpope/vim-rails'
+Plug 'tpope/vim-bundler'
 Plug 'Spaceghost/vim-matchit' | Plug 'rking/vim-ruby-refactoring', { 'for': 'ruby' }
 Plug 'Spaceghost/vim-matchit' | Plug 'kana/vim-textobj-user' | Plug 'nelstrom/vim-textobj-rubyblock', { 'for': 'ruby' }
 

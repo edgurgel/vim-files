@@ -2,7 +2,7 @@
   "coc.preferences.jumpCommand": "tabe",
   "coc.preferences.enableFloatHighlight": true,
   "solargraph.completion": true,
-  "solargraph.definitions" : true,
+  "solargraph.definitions" : false,
   "solargraph.hover": true,
   "languageserver": {
     "elixirLS": {
