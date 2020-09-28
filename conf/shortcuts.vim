@@ -4,6 +4,7 @@ nnoremap <leader>ql :lopen<CR>:QuickFixClear<CR>:q<CR>
 
 " keep pasted content in buffer
 xnoremap p pgvy
+vnoremap <leader>p "_dP
 
 " if a line wraps, 'j' and 'k' move through each visual line
 noremap j gj

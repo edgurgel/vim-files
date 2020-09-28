@@ -10,9 +10,6 @@ Plug 'ap/vim-css-color'
 
 Plug 'scrooloose/nerdcommenter'
 
-Plug 'kien/ctrlp.vim'
-Plug 'jasoncodes/ctrlp-modified.vim'
-
 Plug 'Raimondi/delimitMate'
 
 Plug 'bling/vim-airline'
@@ -29,14 +26,16 @@ Plug 'janko-m/vim-test'
 Plug 'tpope/vim-dispatch'
 Plug 'kassio/neoterm'
 
-Plug 'wsdjeg/FlyGrep.vim'
+Plug 'junegunn/fzf'
+Plug 'junegunn/fzf.vim'
+Plug 'airblade/vim-rooter'
 
 Plug 'kshenoy/vim-signature'
 
 Plug 'ntpeters/vim-better-whitespace'
 
 " LSP
-Plug 'neoclide/coc.nvim', {'tag': '*', 'branch': 'release'}
+Plug 'neoclide/coc.nvim', {'tag': 'v0.0.77', 'branch': 'release'}
 Plug 'w0rp/ale'
 " Plug 'autozimu/LanguageClient-neovim', {
     " \ 'branch': 'next',
