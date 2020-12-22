@@ -36,6 +36,7 @@ Plug 'ntpeters/vim-better-whitespace'
 
 " LSP
 Plug 'neoclide/coc.nvim', {'tag': 'v0.0.77', 'branch': 'release'}
+Plug 'hyhugh/coc-erlang_ls', {'do': 'yarn install --frozen-lockfile'}
 Plug 'w0rp/ale'
 " Plug 'autozimu/LanguageClient-neovim', {
     " \ 'branch': 'next',
@@ -43,6 +44,7 @@ Plug 'w0rp/ale'
     " \ }
 
 Plug 'scrooloose/nerdtree'
+Plug 'tpope/vim-eunuch'
 
 " Git related
 Plug 'tpope/vim-fugitive'

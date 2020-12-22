@@ -4,10 +4,13 @@
   "solargraph.completion": true,
   "solargraph.definitions" : false,
   "solargraph.hover": true,
+  "codeLens.enable": true,
   "languageserver": {
     "elixirLS": {
       "command": "/Users/eduardo/dev/vim-files/plugged/vim-elixirls/elixir-ls/release/language_server.sh",
       "filetypes": ["elixir", "eelixir"]
     }
-  }
+  },
+  "erlang_ls.erlang_ls_path": "~/.nvim/plugged/coc-erlang_ls/",
+  "erlang_ls.trace.server": "off"
 }

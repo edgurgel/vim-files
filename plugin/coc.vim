@@ -11,6 +11,9 @@ endfunction
 
 autocmd FileType elixir,eelixir nnoremap gf <Plug>(coc-definition)
 autocmd FileType elixir,eelixir nnoremap gr <Plug>(coc-references)
+
+nnoremap <leader>s :call CocAction('codeLensAction')<CR>
+
 " autocmd FileType ruby nnoremap gf <Plug>(coc-definition)
 " autocmd FileType ruby nnoremap gr <Plug>(coc-references)
 " xmap <leader>f <Plug>(coc-format)
