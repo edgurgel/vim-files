@@ -1,6 +1,7 @@
 {
   "coc.preferences.jumpCommand": "tabe",
   "coc.preferences.enableFloatHighlight": true,
+  "coc.preferences.formatOnSaveFiletypes": ["elixir", "json"],
   "solargraph.completion": true,
   "solargraph.definitions" : false,
   "solargraph.hover": true,
