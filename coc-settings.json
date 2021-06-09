@@ -1,14 +1,14 @@
 {
   "coc.preferences.jumpCommand": "tabe",
   "coc.preferences.enableFloatHighlight": true,
-  "coc.preferences.formatOnSaveFiletypes": ["elixir", "json"],
+  "coc.preferences.formatOnSaveFiletypes": ["elixir", "json", "rust"],
   "solargraph.completion": true,
   "solargraph.definitions" : false,
   "solargraph.hover": true,
   "codeLens.enable": true,
   "languageserver": {
     "elixirLS": {
-      "command": "/Users/eduardo/dev/vim-files/plugged/vim-elixirls/elixir-ls/release/language_server.sh",
+      "command": "/Users/eduardo/workspace/nvim-files/plugged/vim-elixirls/elixir-ls/release/language_server.sh",
       "filetypes": ["elixir", "eelixir"]
     }
   },

@@ -9,12 +9,13 @@ function! s:show_documentation()
   endif
 endfunction
 
-autocmd FileType elixir,eelixir nnoremap gf <Plug>(coc-definition)
-autocmd FileType elixir,eelixir nnoremap gr <Plug>(coc-references)
-
 nnoremap <leader>s :call CocAction('codeLensAction')<CR>
 
+autocmd FileType rust,elixir,eelixir nnoremap gf <Plug>(coc-definition)
+autocmd FileType rust,elixir,eelixir nnoremap gr <Plug>(coc-references)
 " autocmd FileType ruby nnoremap gf <Plug>(coc-definition)
 " autocmd FileType ruby nnoremap gr <Plug>(coc-references)
 " xmap <leader>f <Plug>(coc-format)
 " nmap <leader>f <Plug>(coc-format)
+autocmd FileType rust,elixir,eelixir map <silent> gd <Plug>(coc-definition)
+autocmd FileType rust,elixir,eelixir map <silent> gr <Plug>(coc-references)

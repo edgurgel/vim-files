@@ -68,6 +68,15 @@ Plug 'elixir-lang/vim-elixir'
 Plug 'mhinz/vim-mix-format'
 Plug 'GrzegorzKozub/vim-elixirls', { 'do': ':ElixirLsCompileSync' }
 
+" Gleam related
+Plug 'gleam-lang/gleam.vim'
+
+" Hamler
+Plug 'hamler-lang/hamler-vim'
+
+" Rust
+Plug 'rust-lang/rust.vim'
+
 " Javascript related
 Plug 'pangloss/vim-javascript'
 Plug 'mxw/vim-jsx'
