@@ -26,7 +26,7 @@ Plug 'janko-m/vim-test'
 Plug 'tpope/vim-dispatch'
 Plug 'kassio/neoterm'
 
-Plug 'junegunn/fzf'
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 Plug 'airblade/vim-rooter'
 
@@ -66,7 +66,7 @@ Plug 'vim-erlang/vim-erlang-runtime'
 " Elixir related
 Plug 'elixir-lang/vim-elixir'
 Plug 'mhinz/vim-mix-format'
-Plug 'GrzegorzKozub/vim-elixirls', { 'do': ':ElixirLsCompileSync' }
+" Plug 'GrzegorzKozub/vim-elixirls', { 'do': ':ElixirLsCompileSync' }
 
 " Gleam related
 Plug 'gleam-lang/gleam.vim'
