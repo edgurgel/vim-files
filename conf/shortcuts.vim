@@ -56,8 +56,8 @@ vnoremap K :m '<-2<CR>gv=gv
 "map <right> <nop>
 
 " Enter toggles a line comment
-nnoremap <CR> :call NERDComment('n', 'Toggle')<CR>
-vnoremap <CR> :call NERDComment('v', 'Toggle')<CR>
+nnoremap <CR> :call nerdcommenter#Comment('n', 'toggle')<CR>
+vnoremap <CR> :call nerdcommenter#Comment('v', 'toggle')<CR>
 
 " Fold by pressing space
 nnoremap <SPACE> za
