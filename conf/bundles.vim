@@ -35,7 +35,7 @@ Plug 'kshenoy/vim-signature'
 Plug 'ntpeters/vim-better-whitespace'
 
 " LSP
-Plug 'neoclide/coc.nvim', {'tag': 'v0.0.80', 'branch': 'release'}
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'hyhugh/coc-erlang_ls', {'do': 'yarn install --frozen-lockfile'}
 " Plug 'w0rp/ale'
 " Plug 'autozimu/LanguageClient-neovim', {
@@ -86,6 +86,9 @@ Plug 'tomasr/molokai'
 
 " Docs
 Plug 'rizzatti/dash.vim'
+
+" Nix
+Plug 'LnL7/vim-nix'
 
 call plug#end()
 
