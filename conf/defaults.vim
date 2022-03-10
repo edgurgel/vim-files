@@ -9,6 +9,8 @@ else
 endif
 set cursorline
 
+set termguicolors
+
 if has("gui_vimr")
   " Here goes some VimR specific settings like
   set pumblend=20
