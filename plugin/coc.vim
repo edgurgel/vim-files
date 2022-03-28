@@ -10,6 +10,7 @@ function! s:show_documentation()
 endfunction
 
 nnoremap <leader>s :call CocAction('codeLensAction')<CR>
+nnoremap <leader>a <Plug>(coc-codeaction-cursor)
 
 autocmd FileType rust,elixir,eelixir nnoremap gf <Plug>(coc-definition)
 autocmd FileType rust,elixir,eelixir nnoremap gr <Plug>(coc-references)
@@ -19,3 +20,7 @@ autocmd FileType rust,elixir,eelixir nnoremap gr <Plug>(coc-references)
 " nmap <leader>f <Plug>(coc-format)
 autocmd FileType rust,elixir,eelixir map <silent> gd <Plug>(coc-definition)
 autocmd FileType rust,elixir,eelixir map <silent> gr <Plug>(coc-references)
+
+autocmd FileType rust nnoremap <leader>t :CocCommand rust-analyzer.run<CR>
+autocmd FileType rust nnoremap <leader>d :CocCommand rust-analyzer.openDocs<CR>
+autocmd FileType rust nnoremap <leader>e :CocCommand rust-analyzer.explainError<CR>

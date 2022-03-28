@@ -11,5 +11,7 @@
   "solargraph.hover": true,
   "codeLens.enable": true,
   "erlang_ls.erlang_ls_path": "~/.nvim/plugged/coc-erlang_ls/",
-  "erlang_ls.trace.server": "off"
+  "erlang_ls.trace.server": "off",
+  "rust-analyzer.inlayHints.typeHints": true,
+  "rust-analyzer.inlayHints.chainingHints": true
 }
