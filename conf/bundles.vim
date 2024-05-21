@@ -37,6 +37,7 @@ Plug 'ntpeters/vim-better-whitespace'
 " LSP
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'hyhugh/coc-erlang_ls', {'do': 'yarn install --frozen-lockfile'}
+Plug 'elixir-lsp/coc-elixir', {'do': 'yarn install && yarn prepack'}
 " Plug 'w0rp/ale'
 " Plug 'autozimu/LanguageClient-neovim', {
     " \ 'branch': 'next',
@@ -89,6 +90,12 @@ Plug 'rizzatti/dash.vim'
 
 " Nix
 Plug 'LnL7/vim-nix'
+
+" Terraform
+Plug 'hashivim/vim-terraform'
+
+" Freemarker
+Plug 'andreshazard/vim-freemarker'
 
 call plug#end()
 

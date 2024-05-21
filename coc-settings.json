@@ -4,7 +4,8 @@
   "coc.preferences.formatOnSaveFiletypes": [
     "elixir",
     "json",
-    "rust"
+    "rust",
+    "terraform"
   ],
   "solargraph.completion": true,
   "solargraph.definitions": false,
@@ -13,5 +14,17 @@
   "erlang_ls.erlang_ls_path": "~/.nvim/plugged/coc-erlang_ls/",
   "erlang_ls.trace.server": "off",
   "rust-analyzer.inlayHints.typeHints": true,
-  "rust-analyzer.inlayHints.chainingHints": true
+  "rust-analyzer.inlayHints.chainingHints": true,
+  "languageserver": {
+    "terraform": {
+      "command": "terraform-ls",
+      "args": ["serve"],
+      "filetypes": [
+        "terraform",
+        "tf"
+      ],
+      "initializationOptions": {},
+      "settings": {}
+    }
+  }
 }

@@ -24,3 +24,11 @@ autocmd FileType rust,elixir,eelixir map <silent> gr <Plug>(coc-references)
 autocmd FileType rust nnoremap <leader>t :CocCommand rust-analyzer.run<CR>
 autocmd FileType rust nnoremap <leader>d :CocCommand rust-analyzer.openDocs<CR>
 autocmd FileType rust nnoremap <leader>e :CocCommand rust-analyzer.explainError<CR>
+
+" Make <CR> to accept selected completion item or notify coc.nvim to format
+" <C-g>u breaks current undo, please make your own choice
+inoremap <silent><expr> <CR> coc#pum#visible() ? coc#pum#confirm()
+                              \: "\<C-g>u\<CR>\<c-r>=coc#on_enter()\<CR>"
+
+" Use <c-space> to trigger completion
+inoremap <silent><expr> <c-space> coc#refresh()
