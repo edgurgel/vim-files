@@ -97,5 +97,8 @@ Plug 'hashivim/vim-terraform'
 " Freemarker
 Plug 'andreshazard/vim-freemarker'
 
+" GitHub Copilot
+Plug 'github/copilot.vim'
+
 call plug#end()
 
