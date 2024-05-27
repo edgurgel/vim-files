@@ -5,6 +5,8 @@ source $HOME/.nvim/conf/shortcuts.vim
 source $HOME/.nvim/conf/autocmd.vim
 
 lua require('defaults')
+lua require('shortcuts')
+lua require('autocmd')
 
 " load local configurations if they exist
 if filereadable(expand("$HOME/.nvimrc.local"))

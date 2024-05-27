@@ -1,13 +1,3 @@
-" Java specifics
-" Eclim
-au FileType java map <buffer> <leader>mi :JavaImportOrganize<cr>
-au FileType java map <buffer> <leader>co :JavaCorrect<cr>
-au FileType java map <buffer> <leader>fo :JavaFormat<cr>
-au FileType java map <buffer> <leader>gs :JavaGetSet<cr>
-au FileType java map <buffer> <leader>se :JavaSearch<cr>
-au FileType java map <buffer> <leader>jd :JavaDocComment<cr>
-au FileType java map <buffer> <leader>ju :JUnit<cr>
-
 " Java indent with 4 spaces
 au FileType java setlocal tabstop=4 shiftwidth=4 softtabstop=4
 au FileType erlang setlocal tabstop=4 shiftwidth=4 softtabstop=4 noexpandtab
@@ -27,5 +17,3 @@ let g:xml_syntax_folding=1
 au FileType xml setlocal foldmethod=syntax
 
 au BufReadPost * set bufhidden=delete
-
-autocmd BufWritePre * StripWhitespace
