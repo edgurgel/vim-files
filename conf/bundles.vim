@@ -1,4 +1,4 @@
-call plug#begin('~/.nvim/plugged')
+" call plug#begin('~/.nvim/plugged')
 
 " Plug 'tpope/vim-unimpaired'
 " Plug 'tpope/vim-surround'
@@ -37,9 +37,9 @@ call plug#begin('~/.nvim/plugged')
 " Plug 'ntpeters/vim-better-whitespace'
 
 " LSP
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
-Plug 'hyhugh/coc-erlang_ls', {'do': 'yarn install --frozen-lockfile'}
-Plug 'elixir-lsp/coc-elixir', {'do': 'yarn install && yarn prepack'}
+" Plug 'neoclide/coc.nvim', {'branch': 'release'}
+" Plug 'hyhugh/coc-erlang_ls', {'do': 'yarn install --frozen-lockfile'}
+" Plug 'elixir-lsp/coc-elixir', {'do': 'yarn install && yarn prepack'}
 " Plug 'w0rp/ale'
 " Plug 'autozimu/LanguageClient-neovim', {
     " \ 'branch': 'next',
@@ -53,7 +53,7 @@ Plug 'elixir-lsp/coc-elixir', {'do': 'yarn install && yarn prepack'}
 " Plug 'tpope/vim-fugitive'
 " Plug 'tpope/vim-rhubarb'
 " Plug 'mhinz/vim-signify'
-Plug 'mattn/webapi-vim' | Plug 'mattn/gist-vim'
+" Plug 'mattn/webapi-vim' | Plug 'mattn/gist-vim'
 
 " Ruby related
 " Plug 'jgdavey/vim-blockle', { 'for': 'ruby' }
@@ -107,5 +107,4 @@ Plug 'mattn/webapi-vim' | Plug 'mattn/gist-vim'
 " GitHub Copilot
 " Plug 'github/copilot.vim'
 
-call plug#end()
-
+" call plug#end()

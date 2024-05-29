@@ -1,10 +1,5 @@
 return {
   {
-    'elixir-lang/vim-elixir',
-    lazy = true,
-    ft = 'elixir'
-  },
-  {
     'mhinz/vim-mix-format',
     lazy = true,
     ft = 'elixir',

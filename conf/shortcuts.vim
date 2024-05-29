@@ -40,8 +40,8 @@ nnoremap <leader>ql :lopen<CR>:QuickFixClear<CR>:q<CR>
 
 " Move lines up and down
 " originally K(help) and Q(ex mode), now they are more useful
-nnoremap Q :m .+1<CR>==
-nnoremap K :m .-2<CR>==
+" nnoremap Q :m .+1<CR>==
+" nnoremap K :m .-2<CR>==
 " vnoremap Q :m '>+1<CR>gv=gv
 " vnoremap K :m '<-2<CR>gv=gv
 
