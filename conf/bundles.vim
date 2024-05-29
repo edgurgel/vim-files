@@ -1,38 +1,40 @@
 call plug#begin('~/.nvim/plugged')
 
-Plug 'tpope/vim-unimpaired'
-Plug 'tpope/vim-surround'
-Plug 'tpope/vim-repeat'
-Plug 'tpope/vim-endwise'
-Plug 'tpope/vim-abolish'
+" Plug 'tpope/vim-unimpaired'
+" Plug 'tpope/vim-surround'
+" Plug 'tpope/vim-repeat'
+" Plug 'tpope/vim-endwise'
+" Plug 'tpope/vim-abolish'
 
-Plug 'ap/vim-css-color'
+" Plug 'ap/vim-css-color'
 
-Plug 'scrooloose/nerdcommenter'
+" Plug 'scrooloose/nerdcommenter'
 
-Plug 'Raimondi/delimitMate'
+" Plug 'Raimondi/delimitMate'
 
-Plug 'bling/vim-airline'
+" Plug 'bling/vim-airline'
 
-Plug 'benekastah/neomake'
+" Not migrated
+" Plug 'benekastah/neomake'
 
-Plug 'bkad/CamelCaseMotion'
+" Plug 'bkad/CamelCaseMotion'
 
-Plug 'sickill/vim-pasta'
+" Plug 'sickill/vim-pasta'
 
-Plug 'mjbrownie/swapit'
+" Plug 'mjbrownie/swapit'
 
-Plug 'janko-m/vim-test'
-Plug 'tpope/vim-dispatch'
-Plug 'kassio/neoterm'
+" Not migrated
+" Plug 'janko-m/vim-test'
+" Plug 'tpope/vim-dispatch'
+" Plug 'kassio/neoterm'
 
-Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
-Plug 'junegunn/fzf.vim'
-Plug 'airblade/vim-rooter'
+" Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+" Plug 'junegunn/fzf.vim'
+" Plug 'airblade/vim-rooter'
 
-Plug 'kshenoy/vim-signature'
+" Plug 'kshenoy/vim-signature'
 
-Plug 'ntpeters/vim-better-whitespace'
+" Plug 'ntpeters/vim-better-whitespace'
 
 " LSP
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
@@ -44,61 +46,66 @@ Plug 'elixir-lsp/coc-elixir', {'do': 'yarn install && yarn prepack'}
     " \ 'do': 'bash install.sh',
     " \ }
 
-Plug 'scrooloose/nerdtree'
-Plug 'tpope/vim-eunuch'
+" Plug 'scrooloose/nerdtree'
+" Plug 'tpope/vim-eunuch'
 
 " Git related
-Plug 'tpope/vim-fugitive'
-Plug 'tpope/vim-rhubarb'
-Plug 'mhinz/vim-signify'
+" Plug 'tpope/vim-fugitive'
+" Plug 'tpope/vim-rhubarb'
+" Plug 'mhinz/vim-signify'
 Plug 'mattn/webapi-vim' | Plug 'mattn/gist-vim'
 
 " Ruby related
-Plug 'jgdavey/vim-blockle', { 'for': 'ruby' }
-Plug 'vim-ruby/vim-ruby', { 'for': 'ruby' }
-Plug 'tpope/vim-rails'
-Plug 'tpope/vim-bundler'
-Plug 'Spaceghost/vim-matchit' | Plug 'rking/vim-ruby-refactoring', { 'for': 'ruby' }
-Plug 'Spaceghost/vim-matchit' | Plug 'kana/vim-textobj-user' | Plug 'nelstrom/vim-textobj-rubyblock', { 'for': 'ruby' }
+" Plug 'jgdavey/vim-blockle', { 'for': 'ruby' }
+" Plug 'vim-ruby/vim-ruby', { 'for': 'ruby' }
+" Plug 'tpope/vim-rails'
+" Plug 'tpope/vim-bundler'
+" Plug 'Spaceghost/vim-matchit' | Plug 'rking/vim-ruby-refactoring', { 'for': 'ruby' }
+" Plug 'Spaceghost/vim-matchit' | Plug 'kana/vim-textobj-user' | Plug 'nelstrom/vim-textobj-rubyblock', { 'for': 'ruby' }
 
 " Erlang related
-Plug 'vim-erlang/vim-erlang-runtime'
+" Not migrated
+" Plug 'vim-erlang/vim-erlang-runtime'
 
 " Elixir related
-Plug 'elixir-lang/vim-elixir'
-Plug 'mhinz/vim-mix-format'
+" Plug 'elixir-lang/vim-elixir'
+" Plug 'mhinz/vim-mix-format'
 " Plug 'GrzegorzKozub/vim-elixirls', { 'do': ':ElixirLsCompileSync' }
 
 " Gleam related
-Plug 'gleam-lang/gleam.vim'
+" Not migrated
+" Plug 'gleam-lang/gleam.vim'
 
 " Hamler
-Plug 'hamler-lang/hamler-vim'
+" Not migrated
+" Plug 'hamler-lang/hamler-vim'
 
 " Rust
-Plug 'rust-lang/rust.vim'
+" Plug 'rust-lang/rust.vim'
 
 " Javascript related
-Plug 'pangloss/vim-javascript'
-Plug 'mxw/vim-jsx'
+" Plug 'pangloss/vim-javascript'
+" Plug 'mxw/vim-jsx'
 
 " Themes
-Plug 'tomasr/molokai'
+" Plug 'tomasr/molokai'
 
 " Docs
-Plug 'rizzatti/dash.vim'
+" Not migrated
+" Plug 'rizzatti/dash.vim'
 
 " Nix
-Plug 'LnL7/vim-nix'
+" Not migrated
+" Plug 'LnL7/vim-nix'
 
 " Terraform
-Plug 'hashivim/vim-terraform'
+" Plug 'hashivim/vim-terraform'
 
 " Freemarker
-Plug 'andreshazard/vim-freemarker'
+" Plug 'andreshazard/vim-freemarker'
 
 " GitHub Copilot
-Plug 'github/copilot.vim'
+" Plug 'github/copilot.vim'
 
 call plug#end()
 

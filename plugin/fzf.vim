@@ -1,7 +1,7 @@
 " [Buffers] Jump to the existing window if possible
 let g:fzf_buffers_jump = 1
 
-nnoremap <C-p> :GFiles --cached --others --exclude-standard<cr>
+" nnoremap <C-p> :GFiles --cached --others --exclude-standard<cr>
 
 tnoremap <expr> <Esc> (&filetype == "fzf") ? "<Esc>" : "<c-\><c-n>"
 command! -bang -nargs=* Rg
