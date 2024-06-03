@@ -1,5 +1,6 @@
 return {
   "hrsh7th/nvim-cmp",
+  name = "nvim-cmp",
   dependencies = {
     -- install different completion source
     "hrsh7th/cmp-nvim-lsp",

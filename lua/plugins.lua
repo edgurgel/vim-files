@@ -15,6 +15,5 @@ return {
   'kshenoy/vim-signature',
   'ntpeters/vim-better-whitespace',
   'scrooloose/nerdtree',
-  'github/copilot.vim',
   'danilamihailov/beacon.nvim'
 }
