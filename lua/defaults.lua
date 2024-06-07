@@ -1,4 +1,3 @@
-
 -- 50:" Highlighting lines longer than 120 columns
 -- 51:set colorcolumn=120
 vim.cmd [[
@@ -52,8 +51,11 @@ set.colorcolumn = '120'
 set.autoread = true
 
 -- Automatic folding
-set.foldmethod = 'syntax'
+set.foldmethod = 'expr'
 set.foldenable = false
+-- set foldmethod=expr
+-- set foldexpr=nvim_treesitter#foldexpr()
+-- set nofoldenable
 
 -- No backups
 set.backup = false

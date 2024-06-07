@@ -11,6 +11,7 @@
   "solargraph.definitions": false,
   "solargraph.hover": true,
   "codeLens.enable": true,
+  "elixir.pathToElixirLS" : "/Users/eduardo.gurgelpinho/.elixirls/elixir-ls-1.12-24.3/language_server.sh",
   "erlang_ls.erlang_ls_path": "~/.nvim/plugged/coc-erlang_ls/",
   "erlang_ls.trace.server": "off",
   "rust-analyzer.inlayHints.typeHints": true,

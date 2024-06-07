@@ -51,8 +51,8 @@ vim.keymap.set('v', 'Q', ':m \'>+1<CR>gv=gv', { remap = false })
 -- Fold by pressing space
 -- nnoremap <SPACE> za
 -- nnoremap <leader><SPACE> zA
-vim.keymap.set('n', '<SPACE', 'za', { remap = false })
-vim.keymap.set('n', '<leader><SPACE', 'zA', { remap = false })
+vim.keymap.set('n', '<SPACE>', 'za', { remap = false })
+vim.keymap.set('n', '<leader><SPACE>', 'zA', { remap = false })
 
 -- source current file
 vim.keymap.set('n', '<leader>so', ':source %<CR>', { remap = false })

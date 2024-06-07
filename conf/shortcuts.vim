@@ -1,6 +1,7 @@
 "QuickFixClear
-nnoremap <leader>qc :copen<CR>:QuickFixClear<CR>:q<CR>
-nnoremap <leader>ql :lopen<CR>:QuickFixClear<CR>:q<CR>
+" not migrated
+" nnoremap <leader>qc :copen<CR>:QuickFixClear<CR>:q<CR>
+" nnoremap <leader>ql :lopen<CR>:QuickFixClear<CR>:q<CR>
 
 " keep pasted content in buffer
 " xnoremap p pgvy
@@ -70,12 +71,13 @@ nnoremap <leader>lr <esc>:let @/ = ""<cr>:<esc>
 " nnoremap <leader>so :source %<CR>
 
 " open vim-files
-fun! OpenVIMFiles()
-  exe "tabnew"
-  exe "lcd $HOME/.vim/"
-  exe "CtrlP"
-endf
-nnoremap <leader>vi :call OpenVIMFiles()<CR>
+" not migrated
+" fun! OpenVIMFiles()
+  " exe "tabnew"
+  " exe "lcd $HOME/.vim/"
+  " exe "CtrlP"
+" endf
+" nnoremap <leader>vi :call OpenVIMFiles()<CR>
 
 fun! InitFont()
   exe "set guifont=" . g:default_font . g:font_separator . g:default_font_size

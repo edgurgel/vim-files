@@ -14,6 +14,5 @@ return {
   'airblade/vim-rooter',
   'kshenoy/vim-signature',
   'ntpeters/vim-better-whitespace',
-  'scrooloose/nerdtree',
   'danilamihailov/beacon.nvim'
 }
