@@ -1,10 +1,16 @@
 return {
   'neovim/nvim-lspconfig',
   dependencies = {
+    'williamboman/mason.nvim',
+    'williamboman/mason-lspconfig.nvim',
     'lukas-reineke/lsp-format.nvim',
     'nvim-cmp'
   },
   config = function()
+    require("mason").setup()
+    require("mason-lspconfig").setup {
+    ensure_installed = { "lua_ls", "elixirls" },
+}
     local lspconfig = require("lspconfig")
     local capabilities = require("cmp_nvim_lsp").default_capabilities()
     require("lsp-format").setup {}
@@ -15,7 +21,7 @@ return {
 
     lspconfig.elixirls.setup({
       -- you need to specify the executable command mannualy for elixir-ls
-      cmd = { "/Users/eduardo.gurgelpinho/dev/elixir-ls/release/language_server.sh" },
+      -- cmd = { "/Users/eduardo.gurgelpinho/dev/elixir-ls/release/language_server.sh" },
       -- set default capabilities for cmp lsp completion source
       capabilities = capabilities,
       on_attach = on_attach,

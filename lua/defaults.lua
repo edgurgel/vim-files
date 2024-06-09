@@ -64,3 +64,13 @@ set.swapfile = false
 -- Display extra whitespace
 set.list = true
 set.listchars = {tab = '▸ ', trail = '·'}
+
+-- Enable mouse interaction
+set.mouse = 'a'
+
+-- Split the right way
+set.splitbelow = true
+set.splitright = true
+
+-- Incremental substitution
+set.inccommand = 'nosplit'
