@@ -74,5 +74,3 @@ set.splitright = true
 
 -- Incremental substitution
 set.inccommand = 'nosplit'
-
-set.shell = 'bash -l'
