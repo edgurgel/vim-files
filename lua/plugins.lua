@@ -2,7 +2,6 @@ return {
   'tpope/vim-unimpaired',
   'tpope/vim-surround',
   'tpope/vim-repeat',
-  'tpope/vim-endwise',
   'tpope/vim-eunuch',
   'tpope/vim-fugitive',
   'tpope/vim-rhubarb',
