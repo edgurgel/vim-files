@@ -3,7 +3,6 @@ return {
   'tpope/vim-surround',
   'tpope/vim-repeat',
   'tpope/vim-endwise',
-  'tpope/vim-abolish',
   'tpope/vim-eunuch',
   'tpope/vim-fugitive',
   'tpope/vim-rhubarb',

@@ -17,6 +17,13 @@ return {
 
     local on_attach = function(client, bufnr)
       require("lsp-format").on_attach(client, bufnr)
+
+      local bufopts = { noremap = true, silent = true, buffer = bufnr }
+      -- other keybinds that use bufopts
+      -- FIXME
+      vim.keymap.set("n", "<leader>ca", vim.lsp.buf.code_action, bufopts)
+      vim.keymap.set("i", "<a-cr>", vim.lsp.buf.code_action, bufopts) -- same binding, just bound to "alt+enter" like in intellij
+      -- other configuration for on_attach
     end
 
     lspconfig.elixirls.setup({
@@ -46,12 +53,10 @@ return {
     })
 
     lspconfig.lua_ls.setup {
+      -- set default capabilities for cmp lsp completion source
+      capabilities = capabilities,
+      on_attach = on_attach,
       on_init = function(client)
-        local path = client.workspace_folders[1].name
-        if vim.loop.fs_stat(path..'/.luarc.json') or vim.loop.fs_stat(path..'/.luarc.jsonc') then
-          return
-        end
-
         client.config.settings.Lua = vim.tbl_deep_extend('force', client.config.settings.Lua, {
           runtime = {
             -- Tell the language server which version of Lua you're using

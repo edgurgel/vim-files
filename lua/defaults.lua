@@ -26,7 +26,7 @@ set.termguicolors = true
 
 -- autocompletion with a menu
 set.wildmenu = true
-set.wildmode= "list:longest,full"
+set.wildmode = "list:longest,full"
 
 -- Search options
 set.ignorecase = true
@@ -63,7 +63,7 @@ set.swapfile = false
 
 -- Display extra whitespace
 set.list = true
-set.listchars = {tab = '▸ ', trail = '·'}
+set.listchars = { tab = '▸ ', trail = '·' }
 
 -- Enable mouse interaction
 set.mouse = 'a'
@@ -74,3 +74,5 @@ set.splitright = true
 
 -- Incremental substitution
 set.inccommand = 'nosplit'
+
+set.shell = 'bash -l'

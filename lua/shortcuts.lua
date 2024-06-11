@@ -28,8 +28,8 @@ vim.keymap.set('', '<leader>to', ':tabonly<CR>', { remap = true })
 vim.keymap.set('t', '<Esc>', '<C-\\><C-n>', { remap = false })
 vim.keymap.set('n', '<TAB>', 'gt', { remap = false })
 vim.keymap.set('n', '<S-TAB>', 'gT', { remap = false })
-vim.keymap.set('t', '<TAB>', 'gt', { remap = false })
-vim.keymap.set('t', '<S-TAB>', 'gT', { remap = false })
+-- vim.keymap.set('t', '<TAB>', 'gt', { remap = false })
+-- vim.keymap.set('t', '<S-TAB>', 'gT', { remap = false })
 
 -- W also saves
 vim.api.nvim_create_user_command('W', 'w', {})
@@ -47,6 +47,13 @@ vim.keymap.set('v', 'Q', ':m \'>+1<CR>gv=gv', { remap = false })
 -- Enter toggles a line comment
 -- vim.keymap.set('n', '<CR>', ':call nerdcommenter#Comment("n", "toggle")<CR>', { remap = false })
 -- vim.keymap.set('v', '<CR>', ':call nerdcommenter#Comment("v", "toggle")<CR>', { remap = false })
+local operator_rhs = function()
+  return require('vim._comment').operator()
+end
+local line_rhs = function()
+  return require('vim._comment').operator() .. '_'
+end
+vim.keymap.set({ 'n', 'v' }, '<CR>', line_rhs, { expr = true, desc = 'Toggle comment' })
 
 -- Fold by pressing space
 -- nnoremap <SPACE> za
