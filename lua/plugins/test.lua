@@ -16,9 +16,18 @@ return {
       }
     })
 
-    vim.keymap.set('n', '<leader>tr', require("neotest").run.run, { remap = false })
-    vim.keymap.set('n', '<leader>td', function()
+
+    local toggle_watch = function()
+      require("neotest").watch.toggle(vim.fn.expand("%"))
+    end
+
+    local show_test_diagnostics = function()
       require("neotest").output.open({ enter = true })
-    end, { remap = false })
+    end
+
+    vim.keymap.set('n', '<leader>tw', toggle_watch, { remap = false, desc = "Watch file and run tests" })
+
+    vim.keymap.set('n', '<leader>tr', require("neotest").run.run, { remap = false, desc = "Run test" })
+    vim.keymap.set('n', '<leader>td', show_test_diagnostics, { remap = false, desc = "Show test diagnostics" })
   end
 }
