@@ -4,7 +4,7 @@ return {
     branch = "canary",
     dependencies = {
       { "zbirenbaum/copilot.lua" }, -- or github/copilot.vim
-      { "nvim-lua/plenary.nvim" }, -- for curl, log wrapper
+      { "nvim-lua/plenary.nvim" },  -- for curl, log wrapper
     },
     opts = {
       debug = true, -- Enable debugging
@@ -19,6 +19,13 @@ return {
           enabled = false
         }
       })
+
+      require("CopilotChat").setup {
+        debug = false, -- Enable debugging
+        -- See Configuration section for rest
+      }
+
+      vim.keymap.set('n', '<leader>cc', ':CopilotChat<CR>', { remap = false })
     end
   },
 }

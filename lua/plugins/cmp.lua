@@ -23,6 +23,7 @@ return {
     require("copilot_cmp").setup()
     local cmp = require("cmp")
     cmp.setup({
+      preselect = cmp.PreselectMode.None,
       -- add different completion source
       sources = cmp.config.sources({
         -- Copilot Source
