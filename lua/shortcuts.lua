@@ -10,19 +10,19 @@ vim.keymap.set('n', 'j', 'gj')
 vim.keymap.set('n', 'k', 'gk')
 
 -- window movement
-vim.keymap.set('', '<C-j>', '<C-W>j', { remap = true })
-vim.keymap.set('', '<C-k>', '<C-W>k', { remap = true })
-vim.keymap.set('', '<C-h>', '<C-W>h', { remap = true })
-vim.keymap.set('', '<C-l>', '<C-W>l', { remap = true })
+vim.keymap.set('', '<C-j>', '<C-W>j', { remap = true, desc = 'Move to the window on the bottom' })
+vim.keymap.set('', '<C-k>', '<C-W>k', { remap = true, desc = 'Move to the window on the top' })
+vim.keymap.set('', '<C-h>', '<C-W>h', { remap = true, desc = 'Move to the window on the right' })
+vim.keymap.set('', '<C-l>', '<C-W>l', { remap = true, desc = 'Move to the window on the left' })
 
 -- window split change
 vim.keymap.set('n', '<leader>h', '<C-W>t <C-W>K', { remap = true })
 vim.keymap.set('n', '<leader>h', '<C-W>t <C-W>K', { remap = true })
 
 -- tab openning and closing
-vim.keymap.set('', '<leader>tc', ':tabclose<CR>', { remap = true })
-vim.keymap.set('', '<leader>tn', ':tabnew<CR>', { remap = true })
-vim.keymap.set('', '<leader>to', ':tabonly<CR>', { remap = true })
+vim.keymap.set('', '<leader>tc', ':tabclose<CR>', { remap = true, desc = 'Close tab' })
+vim.keymap.set('', '<leader>tn', ':tabnew<CR>', { remap = true, desc = 'Open tab' })
+vim.keymap.set('', '<leader>to', ':tabonly<CR>', { remap = true, desc = 'Close other tabs' })
 
 -- tab navigation
 vim.keymap.set('t', '<Esc>', '<C-\\><C-n>', { remap = false })

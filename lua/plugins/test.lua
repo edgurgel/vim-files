@@ -7,7 +7,10 @@ return {
     "olimorris/neotest-rspec",
     "jfpedroza/neotest-elixir",
   },
-  ft = { "elixir", "ruby" },
+  keys = {
+    { '<leader>tr', "<cmd>lua require('neotest').run.run()<CR>",                   { remap = false, desc = "Run nearby test" } },
+    { '<leader>tf', "<cmd>lua require('neotest').run.run(vim.fn.expand('%'))<CR>", { remap = false, desc = "Run test file" } },
+  },
   config = function()
     require("neotest").setup({
       adapters = {
@@ -15,19 +18,5 @@ return {
         require("neotest-elixir"),
       }
     })
-
-
-    local toggle_watch = function()
-      require("neotest").watch.toggle(vim.fn.expand("%"))
-    end
-
-    local show_test_diagnostics = function()
-      require("neotest").output.open({ enter = true })
-    end
-
-    vim.keymap.set('n', '<leader>tw', toggle_watch, { remap = false, desc = "Watch file and run tests" })
-
-    vim.keymap.set('n', '<leader>tr', require("neotest").run.run, { remap = false, desc = "Run test" })
-    vim.keymap.set('n', '<leader>td', show_test_diagnostics, { remap = false, desc = "Show test diagnostics" })
   end
 }

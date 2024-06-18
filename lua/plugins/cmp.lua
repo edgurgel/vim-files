@@ -28,15 +28,24 @@ return {
       sources = cmp.config.sources({
         -- Copilot Source
         { name = "nvim_lsp", group_index = 2 },
-        { name = "buffer",   group_index = 2 },
         { name = "copilot",  group_index = 3 },
         { name = "path",     group_index = 4 },
         { name = 'luasnip',  group_index = 1 },
+        {
+          name = 'buffer',
+          group_index = 2,
+          option = {
+            get_bufnrs = function()
+              -- Complete from all opened buffers
+              return vim.api.nvim_list_bufs()
+            end
+          }
+        }
       }),
       -- using default mapping preset
       mapping = cmp.mapping.preset.insert({
         ["<C-Space>"] = cmp.mapping.complete(),
-        ["<CR>"] = cmp.mapping.confirm({ select = true }),
+        ["<CR>"] = cmp.mapping.confirm({ select = false }),
       }),
       snippet = {
         -- you must specify a snippet engine

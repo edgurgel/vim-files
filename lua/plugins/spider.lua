@@ -1,0 +1,21 @@
+-- FIXME
+return {
+--   "chrisgrieser/nvim-spider",
+--   keys = {
+--     {
+--       "W",
+--       "<cmd>lua require('spider').motion('w')<CR>",
+--       mode = { "n", "o", "x" },
+--     },
+--     {
+--       "<S-B>",
+--       "<cmd>lua require('spider').motion('b')<CR>",
+--       mode = { "n", "o", "x" },
+--     },
+--     {
+--       "<S-E>",
+--       "<cmd>lua require('spider').motion('e')<CR>",
+--       mode = { "n", "o", "x" },
+--     },
+--   },
+}

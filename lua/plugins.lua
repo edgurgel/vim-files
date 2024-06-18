@@ -10,8 +10,8 @@ return {
   'sickill/vim-pasta',
   'mjbrownie/swapit',
   'airblade/vim-rooter',
-  'kshenoy/vim-signature',
   'ntpeters/vim-better-whitespace',
   'danilamihailov/beacon.nvim',
-  'vim-scripts/blockle.vim'
+  'vim-scripts/blockle.vim',
+  { 'echasnovski/mini.move', version = '*' },
 }

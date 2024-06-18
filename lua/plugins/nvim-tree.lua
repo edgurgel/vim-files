@@ -4,10 +4,12 @@ return {
     dependencies = {
       'nvim-tree/nvim-web-devicons'
     },
-    lazy = false,
+    keys = {
+      -- not sure about this mode option
+      { '<leader>n', ':NvimTreeToggle<CR>', { mode = "n", noremap = true, desc = 'File tree' } }
+    },
     config = function()
       require("nvim-tree").setup()
-      vim.keymap.set('n', '<leader>n', ':NvimTreeToggle<CR>', { noremap = true, desc = 'File tree' })
     end,
   }
 }
