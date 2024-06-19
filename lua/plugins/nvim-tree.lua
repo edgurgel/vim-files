@@ -6,7 +6,7 @@ return {
     },
     keys = {
       -- not sure about this mode option
-      { '<leader>n', ':NvimTreeToggle<CR>', { mode = "n", noremap = true, desc = 'File tree' } }
+      { '<leader>n', ':NvimTreeToggle<CR>', mode = "n", noremap = true, desc = 'File tree' }
     },
     config = function()
       require("nvim-tree").setup()

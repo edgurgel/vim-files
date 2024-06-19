@@ -14,6 +14,11 @@ return {
       --   version = "^1.0.0",
       -- },
     },
+    keys = {
+      { '<C-p>',       "<cmd>lua require('telescope.builtin').find_files()<CR>", noremap = true, desc = 'Find files' },
+      { '<leader>rg',  "<cmd>lua require('telescope.builtin').live_grep()<CR>",  noremap = true, desc = 'Live grep' },
+      { '<leader>git', "<cmd>lua require('telescope.builtin').git_status()<CR>", noremap = true, desc = 'Git status' }
+    },
     config = function()
       require("telescope").setup {
         extensions = {
@@ -28,20 +33,6 @@ return {
             require("telescope.themes").get_dropdown {
               -- even more opts
             }
-
-            -- pseudo code / specification for writing custom displays, like the one
-            -- for "codeactions"
-            -- specific_opts = {
-            --   [kind] = {
-            --     make_indexed = function(items) -> indexed_items, width,
-            --     make_displayer = function(widths) -> displayer
-            --     make_display = function(displayer) -> function(e)
-            --     make_ordinal = function(e) -> string
-            --   },
-            --   -- for example to disable the custom builtin "codeactions" display
-            --      do the following
-            --   codeactions = false,
-            -- }
           }
         }
       }
@@ -49,10 +40,6 @@ return {
       -- require("telescope").load_extension("live_grep_args")
       require('telescope').load_extension('fzf')
       require("telescope").load_extension("ui-select")
-
-      vim.keymap.set('n', '<C-p>', builtin.find_files, { noremap = true })
-      vim.keymap.set('n', '<leader>rg', builtin.live_grep, { noremap = true })
-      vim.keymap.set('n', '<leader>git', builtin.git_status, { noremap = true })
     end
   },
 }

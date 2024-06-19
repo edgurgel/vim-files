@@ -9,8 +9,8 @@ return {
   config = function()
     require("mason").setup()
     require("mason-lspconfig").setup {
-    ensure_installed = { "lua_ls", "elixirls" },
-}
+      ensure_installed = { "lua_ls", "elixirls" },
+    }
     local lspconfig = require("lspconfig")
     local capabilities = require("cmp_nvim_lsp").default_capabilities()
     require("lsp-format").setup {}
