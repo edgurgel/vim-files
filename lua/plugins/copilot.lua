@@ -1,15 +1,6 @@
 return {
   {
-    "CopilotC-Nvim/CopilotChat.nvim",
-    branch = "canary",
-    dependencies = {
-      { "zbirenbaum/copilot.lua" }, -- or github/copilot.vim
-      { "nvim-lua/plenary.nvim" },  -- for curl, log wrapper
-    },
-    opts = {
-      debug = true, -- Enable debugging
-      -- See Configuration section for rest
-    },
+    "zbirenbaum/copilot.lua",
     config = function()
       require("copilot").setup({
         suggestion = {
@@ -19,13 +10,27 @@ return {
           enabled = false
         }
       })
-
+    end
+  },
+  {
+    "CopilotC-Nvim/CopilotChat.nvim",
+    branch = "canary",
+    dependencies = {
+      "zbirenbaum/copilot.lua",
+      "nvim-lua/plenary.nvim", -- for curl, log wrapper
+    },
+    opts = {
+      debug = true, -- Enable debugging
+      -- See Configuration section for rest
+    },
+    keys = {
+      { '<leader>cc', ':CopilotChat<CR>', remap = false, desc = 'Copilot Chat' }
+    },
+    config = function()
       require("CopilotChat").setup {
         debug = false, -- Enable debugging
         -- See Configuration section for rest
       }
-
-      vim.keymap.set('n', '<leader>cc', ':CopilotChat<CR>', { remap = false })
     end
   },
 }
