@@ -8,7 +8,6 @@ return {
   'ap/vim-css-color',
   'sickill/vim-pasta',
   'airblade/vim-rooter',
-  'ntpeters/vim-better-whitespace',
   'danilamihailov/beacon.nvim',
   'vim-scripts/blockle.vim',
   { 'echasnovski/mini.move', version = '*' },
