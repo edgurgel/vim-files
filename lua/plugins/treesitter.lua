@@ -6,7 +6,7 @@ return {
   },
   config = function()
     require("nvim-treesitter.configs").setup({
-      ensure_installed = { "elixir", "eex", "heex", "lua", "ruby", "java", "javascript", "html", "xml", "terraform", "vim", "erlang", "sql", "typescript", "yaml", "dockerfile", "bash", "markdown" },
+      ensure_installed = { "elixir", "eex", "heex", "lua", "ruby", "java", "javascript", "html", "xml", "terraform", "vim", "erlang", "sql", "typescript", "yaml", "dockerfile", "bash", "markdown", "toml" },
       highlight = { enable = true },
       indent = { enable = true },
       endwise = {

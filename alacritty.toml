@@ -1,0 +1,37 @@
+[shell]
+program = "/opt/homebrew/bin/bash"
+args = ["-l"]
+
+[window]
+
+decorations = "Full"
+decorations_theme_variant = "Dark" # "Dark"
+
+[font]
+
+normal.family = "FiraCode Nerd Font"
+bold.family = "FiraCode Nerd Font"
+italic.family = "FiraCode Nerd Font"
+bold_italic.family = "FiraCode Nerd Font"
+
+size = 17.0
+
+[[keyboard.bindings]]
+action = "ScrollPageUp"
+key    = "PageUp"
+mods   = "Shift"
+
+[[keyboard.bindings]]
+action = "ScrollPageDown"
+key    = "PageDown"
+mods   = "Shift"
+
+[[keyboard.bindings]]
+action = "ScrollToTop"
+key    = "Home"
+mods   = "Shift"
+
+[[keyboard.bindings]]
+action = "ScrollToBottom"
+key    = "End"
+mods   = "Shift"

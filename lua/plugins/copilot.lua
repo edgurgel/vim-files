@@ -1,6 +1,7 @@
 return {
   {
     "zbirenbaum/copilot.lua",
+    lazy = true,
     config = function()
       require("copilot").setup({
         suggestion = {
@@ -24,7 +25,7 @@ return {
       -- See Configuration section for rest
     },
     keys = {
-      { '<leader>cc', ':CopilotChat<CR>', remap = false, desc = 'Copilot Chat' }
+      { '<leader>cc', ':CopilotChatToggle<CR>', remap = false, desc = 'Copilot Chat' }
     },
     config = function()
       require("CopilotChat").setup {

@@ -18,7 +18,7 @@ return {
     local on_attach = function(client, bufnr)
       require("lsp-format").on_attach(client, bufnr)
 
-      local bufopts = { noremap = true, silent = true, buffer = bufnr }
+      local bufopts = { noremap = true, silent = true, buffer = bufnr, desc = 'Code Actions' }
       -- other keybinds that use bufopts
       -- FIXME
       vim.keymap.set("n", "<leader>ca", vim.lsp.buf.code_action, bufopts)

@@ -6,6 +6,7 @@ return {
     dependencies = {
       'nvim-lua/plenary.nvim',
       'nvim-telescope/telescope-ui-select.nvim',
+      "CopilotC-Nvim/CopilotChat.nvim",
       { 'nvim-telescope/telescope-fzf-native.nvim', build = 'make' },
       -- {
       --   "nvim-telescope/telescope-live-grep-args.nvim",
@@ -17,7 +18,16 @@ return {
     keys = {
       { '<C-p>',       "<cmd>lua require('telescope.builtin').find_files()<CR>", noremap = true, desc = 'Find files' },
       { '<leader>rg',  "<cmd>lua require('telescope.builtin').live_grep()<CR>",  noremap = true, desc = 'Live grep' },
-      { '<leader>git', "<cmd>lua require('telescope.builtin').git_status()<CR>", noremap = true, desc = 'Git status' }
+      { '<leader>git', "<cmd>lua require('telescope.builtin').git_status()<CR>", noremap = true, desc = 'Git status' },
+      -- Show copilot chat prompts actions with telescope
+      {
+        "<leader>cp",
+        function()
+          local actions = require("CopilotChat.actions")
+          require("CopilotChat.integrations.telescope").pick(actions.prompt_actions())
+        end,
+        desc = "CopilotChat - Prompt actions",
+      },
     },
     config = function()
       require("telescope").setup {
