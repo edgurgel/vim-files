@@ -8,8 +8,10 @@ return {
     "jfpedroza/neotest-elixir",
   },
   keys = {
-    { '<leader>tr', "<cmd>lua require('neotest').run.run()<CR>",                   remap = false, desc = "Run nearby test" },
-    { '<leader>tf', "<cmd>lua require('neotest').run.run(vim.fn.expand('%'))<CR>", remap = false, desc = "Run test file" },
+    { '<leader>tr', "<cmd>lua require('neotest').run.run()<CR>",                     remap = false, desc = "Run nearby test" },
+    { '<leader>tf', "<cmd>lua require('neotest').run.run(vim.fn.expand('%'))<CR>",   remap = false, desc = "Run test file" },
+    { '<leader>td', "<cmd>lua require('neotest').output.open({ enter = true })<CR>", remap = false, desc = "Test diagnostics" },
+    { '<leader>tp', "<cmd>lua require('neotest').output_panel.toggle()<CR>", remap = false, desc = "Test panel" },
   },
   config = function()
     require("neotest").setup({
