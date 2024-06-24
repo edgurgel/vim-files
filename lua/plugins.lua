@@ -9,6 +9,5 @@ return {
   'sickill/vim-pasta',
   'airblade/vim-rooter',
   'danilamihailov/beacon.nvim',
-  'vim-scripts/blockle.vim',
   { 'echasnovski/mini.move', version = '*' },
 }
