@@ -2,12 +2,13 @@ return {
   'tpope/vim-unimpaired',
   'tpope/vim-surround',
   'tpope/vim-repeat',
-  'tpope/vim-eunuch',
-  'tpope/vim-fugitive',
+  'tpope/vim-eunuch',   -- Remove, Delete, Rename, etc
+  'tpope/vim-fugitive', -- Git
   'tpope/vim-rhubarb',
   'ap/vim-css-color',
-  'sickill/vim-pasta',
-  'airblade/vim-rooter',
+  'sickill/vim-pasta',   -- Pasting in Vim with indentation adjusted to destination context
+  'airblade/vim-rooter', -- Changes Vim working directory to project root
   'danilamihailov/beacon.nvim',
-  { 'echasnovski/mini.move', version = '*' },
+  { 'echasnovski/mini.move',   version = '*' },
+  { 'Bekaboo/deadcolumn.nvim', version = '*' }
 }

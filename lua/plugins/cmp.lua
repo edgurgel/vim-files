@@ -46,6 +46,7 @@ return {
       mapping = cmp.mapping.preset.insert({
         ["<C-Space>"] = cmp.mapping.complete(),
         ["<CR>"] = cmp.mapping.confirm({ select = false }),
+        ["<TAB>"] = cmp.mapping.confirm({ select = true }),
       }),
       snippet = {
         -- you must specify a snippet engine
