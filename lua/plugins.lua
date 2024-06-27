@@ -6,9 +6,10 @@ return {
   'tpope/vim-fugitive', -- Git
   'tpope/vim-rhubarb',
   'ap/vim-css-color',
-  'sickill/vim-pasta',   -- Pasting in Vim with indentation adjusted to destination context
-  'airblade/vim-rooter', -- Changes Vim working directory to project root
-  'danilamihailov/beacon.nvim',
+  'sickill/vim-pasta',          -- Pasting in Vim with indentation adjusted to destination context
+  'airblade/vim-rooter',        -- Changes Vim working directory to project root
+  'danilamihailov/beacon.nvim', -- Highlight cursor when it moves, changes windows and more
   { 'echasnovski/mini.move',   version = '*' },
-  { 'Bekaboo/deadcolumn.nvim', version = '*' }
+  { 'Bekaboo/deadcolumn.nvim', version = '*' },
+  { 'fladson/vim-kitty',       ft = 'kitty' }
 }
