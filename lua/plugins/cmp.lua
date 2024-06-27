@@ -6,7 +6,7 @@ return {
     "hrsh7th/cmp-nvim-lsp",
     "hrsh7th/cmp-buffer",
     "hrsh7th/cmp-path",
-    "zbirenbaum/copilot-cmp",
+    -- "zbirenbaum/copilot-cmp",
     "onsails/lspkind.nvim",
     {
       "L3MON4D3/LuaSnip",
@@ -20,7 +20,7 @@ return {
   },
   config = function()
     require("luasnip.loaders.from_vscode").lazy_load()
-    require("copilot_cmp").setup()
+    -- require("copilot_cmp").setup()
     local cmp = require("cmp")
     cmp.setup({
       preselect = cmp.PreselectMode.None,
@@ -28,7 +28,7 @@ return {
       sources = cmp.config.sources({
         -- Copilot Source
         { name = "nvim_lsp", group_index = 2 },
-        { name = "copilot",  group_index = 3 },
+        -- { name = "copilot",  group_index = 3 },
         { name = "path",     group_index = 4 },
         { name = 'luasnip',  group_index = 1 },
         {

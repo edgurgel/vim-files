@@ -1,22 +1,28 @@
 return {
   'neovim/nvim-lspconfig',
   dependencies = {
-    'williamboman/mason.nvim',
-    'williamboman/mason-lspconfig.nvim',
-    'lukas-reineke/lsp-format.nvim',
-    'nvim-cmp'
+    'williamboman/mason.nvim',           -- Install dependencies
+    'williamboman/mason-lspconfig.nvim', -- Install lsp dependencies
+    'lukas-reineke/lsp-format.nvim',     -- Auto format
+    'nvim-cmp',                          -- Auto completion
+    "ray-x/lsp_signature.nvim",          -- Type signature completion
   },
   config = function()
     require("mason").setup()
     require("mason-lspconfig").setup {
-      ensure_installed = { "lua_ls", "elixirls" },
+      ensure_installed = { "lua_ls", "elixirls", "tsserver" },
     }
     local lspconfig = require("lspconfig")
     local capabilities = require("cmp_nvim_lsp").default_capabilities()
-    require("lsp-format").setup {}
+    require("lsp-format").setup({})
+
 
     local on_attach = function(client, bufnr)
-      require("lsp-format").on_attach(client, bufnr)
+      if client["name"] ~= 'solargraph' then
+        require("lsp-format").on_attach(client, bufnr)
+      end
+
+      require("lsp_signature").on_attach({}, bufnr)
 
       local bufopts = { noremap = true, silent = true, buffer = bufnr, desc = 'Code Actions' }
       -- other keybinds that use bufopts
@@ -27,8 +33,6 @@ return {
     end
 
     lspconfig.elixirls.setup({
-      -- you need to specify the executable command mannualy for elixir-ls
-      -- cmd = { "/Users/eduardo.gurgelpinho/dev/elixir-ls/release/language_server.sh" },
       -- set default capabilities for cmp lsp completion source
       capabilities = capabilities,
       on_attach = on_attach,
@@ -49,7 +53,7 @@ return {
     lspconfig.tsserver.setup({
       -- set default capabilities for cmp lsp completion source
       capabilities = capabilities,
-      -- on_attach = on_attach,
+      on_attach = on_attach,
     })
 
     lspconfig.lua_ls.setup {
