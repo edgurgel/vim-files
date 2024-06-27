@@ -4,6 +4,8 @@ Install GNU `stow`` and run:
 
 `stow -v --dotfiles -t ~/ .`
 
+Add `export RIPGREP_CONFIG_PATH=~/.ripgreprc` to your `.bashrc`
+
 ### Plugin settings
 
 Each plugin has its entry in `conf/bundles.vim` file. This file is going to be
