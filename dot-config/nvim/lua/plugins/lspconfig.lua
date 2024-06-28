@@ -10,7 +10,7 @@ return {
   config = function()
     require("mason").setup()
     require("mason-lspconfig").setup {
-      ensure_installed = { "lua_ls", "elixirls", "tsserver" },
+      ensure_installed = { "lua_ls", "elixirls", "tsserver", "harper_ls", "taplo" },
     }
     local lspconfig = require("lspconfig")
     local capabilities = require("cmp_nvim_lsp").default_capabilities()
@@ -25,39 +25,51 @@ return {
       require("lsp_signature").on_attach({}, bufnr)
 
       local bufopts = { noremap = true, silent = true, buffer = bufnr, desc = 'Code Actions' }
-      -- other keybinds that use bufopts
+      -- Other keybindings that use bufopts
       -- FIXME
       vim.keymap.set("n", "<leader>ca", vim.lsp.buf.code_action, bufopts)
-      vim.keymap.set("i", "<a-cr>", vim.lsp.buf.code_action, bufopts) -- same binding, just bound to "alt+enter" like in intellij
+      vim.keymap.set({ "n", "i" }, "<a-cr>", vim.lsp.buf.code_action, bufopts) -- Same binding, just bound to "alt+enter" like in intellij
       -- other configuration for on_attach
     end
 
+    lspconfig.taplo.setup({
+      -- Set default capabilities for cmp lsp completion source
+      capabilities = capabilities,
+      on_attach = on_attach,
+    })
+
+    lspconfig.harper_ls.setup({
+      -- Set default capabilities for cmp lsp completion source
+      capabilities = capabilities,
+      on_attach = on_attach,
+    })
+
     lspconfig.elixirls.setup({
-      -- set default capabilities for cmp lsp completion source
+      -- Set default capabilities for cmp lsp completion source
       capabilities = capabilities,
       on_attach = on_attach,
     })
 
     lspconfig.solargraph.setup({
-      -- set default capabilities for cmp lsp completion source
+      -- Set default capabilities for cmp lsp completion source
       capabilities = capabilities,
       on_attach = on_attach,
     })
 
     lspconfig.terraformls.setup({
-      -- set default capabilities for cmp lsp completion source
+      -- Set default capabilities for cmp lsp completion source
       capabilities = capabilities,
       on_attach = on_attach,
     })
 
     lspconfig.tsserver.setup({
-      -- set default capabilities for cmp lsp completion source
+      -- Set default capabilities for cmp lsp completion source
       capabilities = capabilities,
       on_attach = on_attach,
     })
 
     lspconfig.lua_ls.setup {
-      -- set default capabilities for cmp lsp completion source
+      -- Set default capabilities for cmp lsp completion source
       capabilities = capabilities,
       on_attach = on_attach,
       on_init = function(client)
