@@ -2,17 +2,17 @@ return {
   "hrsh7th/nvim-cmp",
   name = "nvim-cmp",
   dependencies = {
-    -- install different completion source
+    -- Install different completion source
     "hrsh7th/cmp-nvim-lsp",
     "hrsh7th/cmp-buffer",
     "hrsh7th/cmp-path",
-    -- "zbirenbaum/copilot-cmp",
+    "zbirenbaum/copilot-cmp",
     "onsails/lspkind.nvim",
     {
       "L3MON4D3/LuaSnip",
-      -- follow latest release.
+      -- Follow latest release.
       version = "v2.*", -- Replace <CurrentMajor> by the latest released major (first number of latest release)
-      -- install jsregexp (optional!).
+      -- Install jsregexp (optional!).
       build = "make install_jsregexp",
       dependencies = { "rafamadriz/friendly-snippets" }
     },
@@ -20,15 +20,15 @@ return {
   },
   config = function()
     require("luasnip.loaders.from_vscode").lazy_load()
-    -- require("copilot_cmp").setup()
+    require("copilot_cmp").setup()
     local cmp = require("cmp")
     cmp.setup({
       preselect = cmp.PreselectMode.None,
-      -- add different completion source
+      -- Add different completion source
       sources = cmp.config.sources({
         -- Copilot Source
         { name = "nvim_lsp", group_index = 2 },
-        -- { name = "copilot",  group_index = 3 },
+        { name = "copilot",  group_index = 3 },
         { name = "path",     group_index = 4 },
         { name = 'luasnip',  group_index = 1 },
         {
@@ -51,7 +51,7 @@ return {
       snippet = {
         -- you must specify a snippet engine
         expand = function(args)
-          -- using neovim v0.10 native snippet feature
+          -- Using neovim v0.10 native snippet feature
           -- you can also use other snippet engines
           -- vim.snippet.expand(args.body)
           require 'luasnip'.lsp_expand(args.body)
