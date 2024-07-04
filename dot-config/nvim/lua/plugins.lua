@@ -9,7 +9,6 @@ return {
   'sickill/vim-pasta',          -- Pasting in Vim with indentation adjusted to destination context
   'airblade/vim-rooter',        -- Changes Vim working directory to project root
   'danilamihailov/beacon.nvim', -- Highlight cursor when it moves, changes windows and more
-  { 'Bekaboo/deadcolumn.nvim', version = '*' },
-  { 'fladson/vim-kitty',       ft = 'kitty' },
-  'RRethy/vim-illuminate', -- automatically highlighting other uses of the word under the cursor
+  { 'fladson/vim-kitty', ft = 'kitty' },
+  'RRethy/vim-illuminate',      -- automatically highlighting other uses of the word under the cursor
 }
