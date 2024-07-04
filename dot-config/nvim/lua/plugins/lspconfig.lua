@@ -26,9 +26,9 @@ return {
 
       local bufopts = { noremap = true, silent = true, buffer = bufnr, desc = 'Code Actions' }
       -- Other keybindings that use bufopts
-      -- FIXME
       vim.keymap.set("n", "<leader>ca", vim.lsp.buf.code_action, bufopts)
-      vim.keymap.set({ "n", "i" }, "<a-cr>", vim.lsp.buf.code_action, bufopts) -- Same binding, just bound to "alt+enter" like in intellij
+      -- Same binding, just bound to "alt+enter" like in intellij
+      vim.keymap.set({ "n", "i" }, "<a-cr>", vim.lsp.buf.code_action, bufopts)
       -- other configuration for on_attach
     end
 
@@ -42,6 +42,25 @@ return {
       -- Set default capabilities for cmp lsp completion source
       capabilities = capabilities,
       on_attach = on_attach,
+      settings = {
+        ["harper-ls"] = {
+          linters = {
+            spell_check = false,
+            spelled_numbers = false,
+            an_a = true,
+            sentence_capitalization = false,
+            unclosed_quotes = true,
+            wrong_quotes = false,
+            long_sentences = false,
+            repeated_words = true,
+            spaces = true,
+            matcher = true,
+            correct_number_suffix = true,
+            number_suffix_capitalization = true,
+            multiple_sequential_pronouns = true
+          }
+        }
+      },
     })
 
     lspconfig.elixirls.setup({
