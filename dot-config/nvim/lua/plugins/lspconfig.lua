@@ -23,7 +23,7 @@ return {
         require("lsp-format").on_attach(client, bufnr)
       end
 
-      require("lsp_signature").on_attach({}, bufnr)
+      require("lsp_signature").on_attach({ hint_prefix = "󱃖 " }, bufnr)
 
       local bufopts = { noremap = true, silent = true, buffer = bufnr, desc = 'Code Actions' }
       -- Other keybindings that use bufopts
