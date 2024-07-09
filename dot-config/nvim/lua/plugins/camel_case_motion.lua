@@ -1,7 +1,7 @@
 return {
   {
     'bkad/CamelCaseMotion',
-    lazy = false,
+    event = "VeryLazy",
     config = function()
       vim.keymap.set('', '<S-W>', '<Plug>CamelCaseMotion_w', { noremap = false })
       vim.keymap.set('', '<S-B>', '<Plug>CamelCaseMotion_b', { noremap = false })

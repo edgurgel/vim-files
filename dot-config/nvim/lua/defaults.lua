@@ -50,13 +50,6 @@ set.colorcolumn = '120'
 -- Automatically reload files if they were modified outside VIM
 set.autoread = true
 
--- Automatic folding
-set.foldmethod = 'expr'
-set.foldenable = false
--- set foldmethod=expr
--- set foldexpr=nvim_treesitter#foldexpr()
--- set nofoldenable
-
 -- No backups
 set.backup = false
 set.swapfile = false

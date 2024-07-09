@@ -1,6 +1,8 @@
 return {
   "hrsh7th/nvim-cmp",
   name = "nvim-cmp",
+  -- load cmp on InsertEnter
+  event = "InsertEnter",
   dependencies = {
     -- Install different completion source
     "hrsh7th/cmp-nvim-lsp",

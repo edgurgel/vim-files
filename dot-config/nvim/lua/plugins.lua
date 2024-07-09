@@ -1,14 +1,14 @@
 return {
   'tpope/vim-unimpaired',
-  'tpope/vim-surround',
+  { 'tpope/vim-surround', event = "InsertEnter" },
   'tpope/vim-repeat',
-  'tpope/vim-eunuch',   -- Remove, Delete, Rename, etc
-  'tpope/vim-fugitive', -- Git
-  'tpope/vim-rhubarb',
+  { 'tpope/vim-eunuch',   event = "VeryLazy" },  -- Remove, Delete, Rename, etc
+  { 'tpope/vim-fugitive', event = "VeryLazy" },  -- Git
+  { 'tpope/vim-rhubarb',  event = "VeryLazy" },  -- Fugitive + GitHub
   'ap/vim-css-color',
-  'sickill/vim-pasta',          -- Pasting in Vim with indentation adjusted to destination context
-  'airblade/vim-rooter',        -- Changes Vim working directory to project root
-  'danilamihailov/beacon.nvim', -- Highlight cursor when it moves, changes windows and more
-  { 'fladson/vim-kitty', ft = 'kitty' },
-  'RRethy/vim-illuminate',      -- automatically highlighting other uses of the word under the cursor
+  'sickill/vim-pasta',                           -- Pasting in Vim with indentation adjusted to destination context
+  'airblade/vim-rooter', -- Changes Vim working directory to project root
+  'danilamihailov/beacon.nvim',                  -- Highlight cursor when it moves, changes windows and more
+  { 'fladson/vim-kitty',   ft = 'kitty' },
+  'RRethy/vim-illuminate',                       -- automatically highlighting other uses of the word under the cursor
 }

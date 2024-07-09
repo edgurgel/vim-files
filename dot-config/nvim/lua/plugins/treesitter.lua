@@ -1,6 +1,7 @@
 return {
   {
     'Wansmer/treesj',
+    event = "VeryLazy",
     keys = {
       { "<leader>b", "<cmd>TSJToggle<cr>", desc = "Toggle block" }
     },

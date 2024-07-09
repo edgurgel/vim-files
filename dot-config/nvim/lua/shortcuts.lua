@@ -52,12 +52,6 @@ local line_rhs = function()
 end
 vim.keymap.set({ 'n', 'v' }, '<CR>', line_rhs, { expr = true, desc = 'Toggle comment' })
 
--- Fold by pressing space
--- nnoremap <SPACE> za
--- nnoremap <leader><SPACE> zA
-vim.keymap.set('n', '<SPACE>', 'za', { remap = false })
-vim.keymap.set('n', '<leader><SPACE>', 'zA', { remap = false })
-
 -- source current file
 vim.keymap.set('n', '<leader>so', ':source %<CR>', { remap = false })
 
