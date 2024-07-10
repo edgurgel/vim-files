@@ -67,3 +67,10 @@ set.splitright = true
 
 -- Incremental substitution
 set.inccommand = 'nosplit'
+
+-- Add http filetype
+vim.filetype.add({
+  extension = {
+    ['http'] = 'http',
+  },
+})
