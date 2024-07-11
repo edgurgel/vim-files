@@ -2,7 +2,7 @@ return {
   'mistweaverco/kulala.nvim',
   ft = 'http',
   keys = {
-    {'<leader>k', ":lua require('kulala').run()<CR>", noremap = true, silent = true}
+    {'<leader>k', ":lua require('kulala').run()<CR>", noremap = true, silent = true, desc = 'Run HTTP request'}
   },
   config = function()
     -- Setup is required, even if you don't pass any options

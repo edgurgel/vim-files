@@ -1,7 +1,8 @@
 return {
   {
     'Wansmer/treesj',
-    event = "VeryLazy",
+    event = { "BufReadPost", "BufNewFile" },
+    cmd = { "TSInstall", "TSBufEnable", "TSBufDisable", "TSModuleInfo" },
     keys = {
       { "<leader>b", "<cmd>TSJToggle<cr>", desc = "Toggle block" }
     },

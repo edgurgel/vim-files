@@ -2,7 +2,6 @@ return {
   {
     'nvim-telescope/telescope.nvim',
     tag = '0.1.8',
-    -- or                              , branch = '0.1.x',
     dependencies = {
       'nvim-lua/plenary.nvim',
       'nvim-telescope/telescope-ui-select.nvim',
@@ -16,6 +15,7 @@ return {
       --   version = "^1.0.0",
       -- },
     },
+    cmd = "Telescope",
     keys = {
       { '<C-p>',       "<cmd>lua require('telescope.builtin').find_files()<CR>", noremap = true, desc = 'Find files' },
       { '<leader>rg',  "<cmd>lua require('telescope.builtin').live_grep()<CR>",  noremap = true, desc = 'Live grep' },
