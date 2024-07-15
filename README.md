@@ -1,10 +1,14 @@
 ## Installation
 
+Install `bat`, `delta`
+
 Install GNU `stow`` and run:
 
 `stow -v --dotfiles -t ~/ .`
 
 Add `export RIPGREP_CONFIG_PATH=~/.ripgreprc` to your `.bashrc`
+
+Run `bat cache --build`
 
 ### Plugin settings
 
