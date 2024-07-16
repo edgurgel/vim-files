@@ -25,4 +25,5 @@
 [delta]
   features = catppuccin-macchiato
   hyperlinks = true
+  # kitty format
   hyperlinks-file-link-format = "file://{path}#{line}"
