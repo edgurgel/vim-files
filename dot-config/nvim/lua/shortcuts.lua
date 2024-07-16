@@ -47,10 +47,10 @@ vim.keymap.set('v', 'Q', ':m \'>+1<CR>gv=gv', { remap = false })
 -- Enter toggles a line comment
 -- vim.keymap.set('n', '<CR>', ':call nerdcommenter#Comment("n", "toggle")<CR>', { remap = false })
 -- vim.keymap.set('v', '<CR>', ':call nerdcommenter#Comment("v", "toggle")<CR>', { remap = false })
-local line_rhs = function()
-  return require('vim._comment').operator() .. '_'
-end
-vim.keymap.set({ 'n', 'v' }, '<CR>', line_rhs, { expr = true, desc = 'Toggle comment' })
+-- local line_rhs = function()
+--   return require('vim._comment').operator() .. '_'
+-- end
+-- vim.keymap.set({ 'n', 'v' }, '<CR>', line_rhs, { expr = true, desc = 'Toggle comment' })
 
 -- source current file
 vim.keymap.set('n', '<leader>so', ':source %<CR>', { remap = false })
