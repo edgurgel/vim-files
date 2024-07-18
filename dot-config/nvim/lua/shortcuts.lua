@@ -16,8 +16,8 @@ vim.keymap.set('', '<C-h>', '<C-W>h', { remap = true, desc = 'Move to the window
 vim.keymap.set('', '<C-l>', '<C-W>l', { remap = true, desc = 'Move to the window on the left' })
 
 -- window split change
-vim.keymap.set('n', '<leader>h', '<C-W>t <C-W>K', { remap = true })
-vim.keymap.set('n', '<leader>h', '<C-W>t <C-W>K', { remap = true })
+-- vim.keymap.set('n', '<leader>h', '<C-W>t <C-W>K', { remap = true })
+-- vim.keymap.set('n', '<leader>h', '<C-W>t <C-W>K', { remap = true })
 
 -- tab openning and closing
 vim.keymap.set('', '<leader>tc', ':tabclose<CR>', { remap = true, desc = 'Close tab' })
@@ -54,6 +54,9 @@ vim.keymap.set('v', 'Q', ':m \'>+1<CR>gv=gv', { remap = false })
 
 -- source current file
 vim.keymap.set('n', '<leader>so', ':source %<CR>', { remap = false })
+
+-- clear search on escape
+vim.keymap.set('n', "<Esc>", "<Esc>:noh<CR>", { noremap = true, silent = true })
 
 -- no idea
 vim.keymap.set('i', '<C-Space>', '<C-x><C-o>', { remap = true })
