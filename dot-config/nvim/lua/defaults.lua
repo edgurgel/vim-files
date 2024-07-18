@@ -42,11 +42,6 @@ set.softtabstop = 2
 set.backspace = [[indent,eol,start]]
 set.expandtab = true
 
--- Highlighting lines longer than 120 columns
--- set highlight =
-set.scrolloff = 10
-set.colorcolumn = '120'
-
 -- Automatically reload files if they were modified outside VIM
 set.autoread = true
 
