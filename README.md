@@ -1,12 +1,18 @@
 ## Installation
 
-Install `bat`, `delta`
+Install `bat`, `delta`, `vivid`, `startship`
 
 Install GNU `stow`` and run:
 
 `stow -v --dotfiles -t ~/ .`
 
-Add `export RIPGREP_CONFIG_PATH=~/.ripgreprc` to your `.bashrc`
+Add to your `.bashrc`:
+
+```
+export RIPGREP_CONFIG_PATH=~/.ripgreprc`
+export LS_COLORS="$(vivid generate catppuccin-macchiato)"
+```
+
 
 Run `bat cache --build`
 

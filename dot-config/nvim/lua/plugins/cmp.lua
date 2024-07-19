@@ -47,8 +47,11 @@ return {
       -- using default mapping preset
       mapping = cmp.mapping.preset.insert({
         ["<C-Space>"] = cmp.mapping.complete(),
+        -- Enter to confirm
         ["<CR>"] = cmp.mapping.confirm({ select = false }),
-        ["<TAB>"] = cmp.mapping.confirm({ select = true }),
+        -- TAB and Shift + TAB to select next and previous
+        ["<TAB>"] = cmp.mapping.select_next_item(),
+        ["<S-TAB>"] = cmp.mapping.select_prev_item(),
       }),
       snippet = {
         -- you must specify a snippet engine
