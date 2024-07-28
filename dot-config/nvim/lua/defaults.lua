@@ -6,11 +6,7 @@ vim.cmd [[
 
 local set = vim.opt
 
-if vim.fn.has('gui_macvim') == 1 then
-  set.clipboard = 'unnamed'
-else
-  set.clipboard = 'unnamedplus'
-end
+set.clipboard = "unnamed,unnamedplus"
 
 if vim.fn.has('gui_running') == 1 then
   set.guioptions = 'c'
