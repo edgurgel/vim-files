@@ -13,6 +13,7 @@ return {
     vim.o.foldlevelstart = 99
     vim.o.foldmethod = 'expr'
     vim.o.foldenable = false
+    vim.o.fillchars = [[eob: ,fold: ,foldopen:,foldsep: ,foldclose:]]
     -- vim.o.foldenable = true
 
     -- Using Ufo provider need remap `zR` and `zM`. If Neovim is 0.6.1, remap yourself

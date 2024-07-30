@@ -12,7 +12,7 @@ return {
     { '<leader>tr', "<cmd>lua require('neotest').run.run()<CR>",                     remap = false, desc = "Run nearby test" },
     { '<leader>ts', "<cmd>lua require('neotest').run.run({ suite = true })<CR>",     remap = false, desc = "Run test suite" },
     { '<leader>tf', "<cmd>lua require('neotest').run.run(vim.fn.expand('%'))<CR>",   remap = false, desc = "Run test file" },
-    { '<leader>tr', "<cmd>lua require('neotest').run.run_last()<CR>",                remap = false, desc = "Run last test" },
+    { '<leader>tl', "<cmd>lua require('neotest').run.run_last()<CR>",                remap = false, desc = "Run last test" },
     { '<leader>ta', "<cmd>lua require('neotest').run.attach()<CR>",                  remap = false, desc = "Attach to test" },
     { '<leader>td', "<cmd>lua require('neotest').output.open({ enter = true })<CR>", remap = false, desc = "Test diagnostics" },
     { '<leader>tp', "<cmd>lua require('neotest').output_panel.toggle()<CR>",         remap = false, desc = "Test panel" },
