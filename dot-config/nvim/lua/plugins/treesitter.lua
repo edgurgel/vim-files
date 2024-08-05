@@ -1,6 +1,7 @@
 return {
   {
-    'Wansmer/treesj',
+    'edgurgel/treesj',
+    branch = 'elixir',
     event = { "BufReadPost", "BufNewFile" },
     keys = {
       { "<leader>b", "<cmd>TSJToggle<cr>", desc = "Toggle block" }

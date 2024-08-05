@@ -16,6 +16,10 @@ return {
     { '<leader>ta', "<cmd>lua require('neotest').run.attach()<CR>",                  remap = false, desc = "Attach to test" },
     { '<leader>td', "<cmd>lua require('neotest').output.open({ enter = true })<CR>", remap = false, desc = "Test diagnostics" },
     { '<leader>tp', "<cmd>lua require('neotest').output_panel.toggle()<CR>",         remap = false, desc = "Test panel" },
+    { '<leader>tk', "<cmd>lua require('neotest').run.stop()<CR>",                    remap = false, desc = "Kill test" },
+    { '<leader>tt', "<cmd>require('neotest').summary.toggle()<CR>",                  remap = false, desc = "Tests Summary" },
+
+    -- lua require("neotest").summary.toggle()
   },
   config = function()
     require("neotest").setup({
