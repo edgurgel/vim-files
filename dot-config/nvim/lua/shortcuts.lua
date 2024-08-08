@@ -52,9 +52,6 @@ vim.keymap.set('v', 'Q', ':m \'>+1<CR>gv=gv', { remap = false })
 -- end
 -- vim.keymap.set({ 'n', 'v' }, '<CR>', line_rhs, { expr = true, desc = 'Toggle comment' })
 
--- source current file
-vim.keymap.set('n', '<leader>so', ':source %<CR>', { remap = false })
-
 -- clear search on escape
 vim.keymap.set('n', "<Esc>", "<Esc>:noh<CR>", { noremap = true, silent = true })
 

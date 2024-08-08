@@ -17,9 +17,10 @@ return {
     cmd = "Telescope",
     keys = {
       -- { '<C-p>',       "<cmd>lua require('telescope.builtin').find_files()<CR>",     noremap = true, desc = 'Find files' },
-      { '<leader>rg',  "<cmd>lua require('telescope.builtin').live_grep()<CR>",      noremap = true, desc = 'Live grep' },
-      { '<leader>git', "<cmd>lua require('telescope.builtin').git_status()<CR>",     noremap = true, desc = 'Git status' },
-      { '<leader>ref', "<cmd>lua require('telescope.builtin').lsp_references()<CR>", noremap = true, desc = 'LSP References' },
+      { '<leader>rg',  "<cmd>lua require('telescope.builtin').live_grep()<CR>",            noremap = true, desc = 'Live grep' },
+      { '<leader>git', "<cmd>lua require('telescope.builtin').git_status()<CR>",           noremap = true, desc = 'Git status' },
+      { '<leader>ref', "<cmd>lua require('telescope.builtin').lsp_references()<CR>",       noremap = true, desc = 'LSP References' },
+      { '<leader>sym', "<cmd>lua require('telescope.builtin').lsp_document_symbols()<CR>", noremap = true, desc = 'LSP Symbols' },
       -- Show copilot chat prompts actions with telescope
       {
         "<leader>cp",
