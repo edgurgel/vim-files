@@ -27,3 +27,6 @@
   hyperlinks = true
   # kitty format
   hyperlinks-file-link-format = "file://{path}#{line}"
+
+[absorb]
+    oneFixupPerCommit = true
