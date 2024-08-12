@@ -13,6 +13,12 @@ return {
     end,
   },
   {
+    'andymass/vim-matchup',
+    config = function()
+      -- vim.g.matchup_matchparen_offscreen = { method = 0 }
+    end,
+  },
+  {
     "nvim-treesitter/nvim-treesitter",
     dependencies = {
       'nvim-treesitter/nvim-treesitter-context',
@@ -51,6 +57,9 @@ return {
           "vimdoc",
           "xml",
           "yaml",
+        },
+        matchup = {
+          enable = true, -- mandatory, false will disable the whole extension
         },
         highlight = { enable = true },
         indent = { enable = true },

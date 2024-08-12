@@ -5,6 +5,7 @@ return {
   dependencies = { 'kevinhwang91/promise-async' },
   keys = {
     { '<SPACE>',         'za', desc = 'Toggle fold',         remap = false },
+    { '<SPACE>',         'zf', desc = 'Fold',                remap = false, mode = 'v' },
     { '<leader><SPACE>', 'zA', desc = 'Toggle fold on file', remap = false },
   },
   config = function()
