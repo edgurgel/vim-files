@@ -1,6 +1,6 @@
 return {
   'tpope/vim-unimpaired',
-  { 'tpope/vim-surround', event = "InsertEnter" },
+  { 'tpope/vim-surround', event = "BufEnter" },
   'tpope/vim-repeat',
   { 'tpope/vim-eunuch',   event = "VeryLazy" }, -- Remove, Delete, Rename, etc
   'ap/vim-css-color',
