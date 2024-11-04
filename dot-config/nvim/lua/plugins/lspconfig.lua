@@ -12,7 +12,7 @@ return {
     config = function()
       require("mason").setup()
       require("mason-lspconfig").setup {
-        ensure_installed = { "lua_ls", "elixirls", "tsserver", "harper_ls", "taplo" },
+        ensure_installed = { "lua_ls", "elixirls", "ts_ls", "harper_ls", "taplo" },
       }
       local lspconfig = require("lspconfig")
       local capabilities = require("cmp_nvim_lsp").default_capabilities()
@@ -83,7 +83,7 @@ return {
         on_attach = on_attach,
       })
 
-      lspconfig.tsserver.setup({
+      lspconfig.ts_ls.setup({
         -- Set default capabilities for cmp lsp completion source
         capabilities = capabilities,
         on_attach = on_attach,
