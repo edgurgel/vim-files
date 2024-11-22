@@ -26,6 +26,7 @@ return {
     keys = {
       { '<leader>cc', ':CopilotChatToggle<CR>', remap = false, desc = 'Copilot Chat' }
     },
+    cmd = "CopilotChat",
     config = function()
       require("CopilotChat").setup {
         debug = false, -- Enable debugging
