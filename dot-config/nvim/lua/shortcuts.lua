@@ -31,6 +31,9 @@ vim.keymap.set('n', '<S-TAB>', 'gT', { remap = false })
 -- vim.keymap.set('t', '<TAB>', 'gt', { remap = false })
 -- vim.keymap.set('t', '<S-TAB>', 'gT', { remap = false })
 
+vim.keymap.set("n", "<leader>d", "<cmd>vsplit | lua vim.lsp.buf.definition()<CR>", {})
+vim.keymap.set("n", "<leader>D", "<cmd>tab split | lua vim.lsp.buf.definition()<CR>", {})
+
 -- W also saves
 vim.api.nvim_create_user_command('W', 'w', {})
 
