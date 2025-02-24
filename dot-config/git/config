@@ -1,3 +1,6 @@
+[column]
+  ui = auto
+
 [commit]
   verbose = true
 
@@ -29,4 +32,16 @@
   hyperlinks-file-link-format = "file://{path}#{line}"
 
 [absorb]
-    oneFixupPerCommit = true
+  oneFixupPerCommit = true
+
+[init]
+  defaultBranch = main
+
+[push]
+  default = simple
+  autoSetupRemote = true
+
+[fetch]
+  prune = true
+  pruneTags = true
+  all = true
