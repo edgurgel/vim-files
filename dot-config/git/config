@@ -6,6 +6,7 @@
 
 [core]
   pager = delta
+	excludesFile = /Users/eduardo/.config/git/ignore
 
 [interactive]
   diffFilter = delta --color-only
