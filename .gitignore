@@ -5,3 +5,4 @@ eclim
 bundle/*
 autoload
 plugged
+dot-local
