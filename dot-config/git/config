@@ -46,3 +46,6 @@
   prune = true
   pruneTags = true
   all = true
+[user]
+	email = eduardo@gurgel.me
+	name = Eduardo Gurgel Pinho
