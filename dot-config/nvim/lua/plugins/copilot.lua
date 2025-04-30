@@ -14,7 +14,7 @@ return {
   },
   {
     "CopilotC-Nvim/CopilotChat.nvim",
-    branch = "canary",
+    version = "*",
     dependencies = {
       "zbirenbaum/copilot.lua",
       "nvim-lua/plenary.nvim", -- For curl, log wrapper

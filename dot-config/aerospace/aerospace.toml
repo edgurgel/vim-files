@@ -182,6 +182,11 @@ run = ['layout floating']             # The callback itself
 [[on-window-detected]]
 if.app-id = 'com.apple.finder'
 run = ['layout floating']      # The callback itself
+
 [[on-window-detected]]
 if.app-id = 'com.skitch.skitch'
+run = ['layout floating']
+
+[[on-window-detected]]
+if.app-id = 'com.spotify.client'
 run = ['layout floating']
