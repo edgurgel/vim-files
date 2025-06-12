@@ -28,21 +28,20 @@ return {
     'neovim/nvim-lspconfig',
     version = "*",
     dependencies = {
-      'williamboman/mason.nvim',           -- Install dependencies
-      'williamboman/mason-lspconfig.nvim', -- Install lsp dependencies
-      'lukas-reineke/lsp-format.nvim',     -- Auto format
-      'nvim-cmp',                          -- Auto completion
-      "ray-x/lsp_signature.nvim",          -- Type signature completion
+      { 'williamboman/mason.nvim',           version = '*' }, -- Install dependencies
+      { 'williamboman/mason-lspconfig.nvim', version = '*' }, -- Install lsp dependencies
+      'lukas-reineke/lsp-format.nvim',                        -- Auto format
+      'nvim-cmp',                                             -- Auto completion
+      "ray-x/lsp_signature.nvim",                             -- Type signature completion
     },
     config = function()
       require("mason").setup()
       require("mason-lspconfig").setup {
-        ensure_installed = { "lua_ls", "elixirls", "ts_ls", "harper_ls", "taplo", "denols" },
+        ensure_installed = { "lua_ls", "elixirls", "ts_ls", "harper_ls", "taplo", "denols", "erlangls" },
       }
       local lspconfig = require("lspconfig")
       local capabilities = require("cmp_nvim_lsp").default_capabilities()
       require("lsp-format").setup({})
-
 
       local on_attach = function(client, bufnr)
         if client["name"] ~= 'solargraph' then
@@ -59,14 +58,18 @@ return {
         -- other configuration for on_attach
       end
 
-      lspconfig.taplo.setup({
-        -- Set default capabilities for cmp lsp completion source
+      vim.lsp.config('erlangls', {
+        capabilities = capabilities,
+        on_attach = on_attach,
+      })
+      vim.lsp.enable('erlangls')
+
+      vim.lsp.config('taplo', {
         capabilities = capabilities,
         on_attach = on_attach,
       })
 
-      lspconfig.harper_ls.setup({
-        -- Set default capabilities for cmp lsp completion source
+      vim.lsp.config('harper_ls', {
         capabilities = capabilities,
         on_attach = on_attach,
         settings = {
@@ -89,26 +92,22 @@ return {
           }
         },
       })
+      vim.lsp.enable('harper_ls')
 
-      lspconfig.elixirls.setup({
+      vim.lsp.config('elixirls', {
         -- Set default capabilities for cmp lsp completion source
         capabilities = capabilities,
         on_attach = on_attach,
       })
+      vim.lsp.enable('elixirls')
 
-      lspconfig.solargraph.setup({
-        -- Set default capabilities for cmp lsp completion source
+      vim.lsp.config('solargraph', {
         capabilities = capabilities,
         on_attach = on_attach,
       })
+      vim.lsp.enable('solargraph')
 
-      lspconfig.terraformls.setup({
-        -- Set default capabilities for cmp lsp completion source
-        capabilities = capabilities,
-        on_attach = on_attach,
-      })
-
-      lspconfig.ts_ls.setup({
+      vim.lsp.config('ts_ls', {
         -- Set default capabilities for cmp lsp completion source
         capabilities = capabilities,
         on_attach = on_attach,
@@ -116,12 +115,15 @@ return {
         root_dir = lspconfig.util.root_pattern("package.json"),
       })
 
-      lspconfig.denols.setup {
+      vim.lsp.enable('ts_ls')
+
+      vim.lsp.config('denols', {
         on_attach = on_attach,
         root_dir = lspconfig.util.root_pattern("deno.json", "deno.jsonc"),
-      }
+      })
+      vim.lsp.enable('denols')
 
-      lspconfig.lua_ls.setup {
+      vim.lsp.config('lua_ls', {
         -- Set default capabilities for cmp lsp completion source
         capabilities = capabilities,
         on_attach = on_attach,
@@ -149,7 +151,8 @@ return {
         settings = {
           Lua = {}
         }
-      }
+      })
+      vim.lsp.enable('lua_ls')
     end,
   }
 }
