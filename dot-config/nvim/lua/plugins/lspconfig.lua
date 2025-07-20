@@ -44,7 +44,7 @@ return {
       require("lsp-format").setup({})
 
       local on_attach = function(client, bufnr)
-        if client["name"] ~= 'solargraph' then
+        if client["name"] ~= 'erlangls' then
           require("lsp-format").on_attach(client, bufnr)
         end
 
