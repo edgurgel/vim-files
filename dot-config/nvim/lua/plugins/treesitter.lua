@@ -45,8 +45,9 @@ return {
   },
   {
     "nvim-treesitter/nvim-treesitter",
+    version = "*",
     dependencies = {
-      'nvim-treesitter/nvim-treesitter-context',
+      {'nvim-treesitter/nvim-treesitter-context', version = "*"},
       'RRethy/nvim-treesitter-endwise',
       'RRethy/nvim-treesitter-textsubjects'
     },

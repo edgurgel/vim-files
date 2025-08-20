@@ -61,3 +61,12 @@ vim.keymap.set('n', "<Esc>", "<Esc>:noh<CR>", { noremap = true, silent = true })
 -- no idea
 vim.keymap.set('i', '<C-Space>', '<C-x><C-o>', { remap = true })
 vim.keymap.set('i', '<C-Q>', '<C-Space>', { remap = true })
+
+-- Copy the current file path to the clipboard to run mix test
+vim.keymap.set('n', '<leader>T', function()
+  local file = vim.fn.expand('%')
+  local line = vim.fn.line('.')
+  local cmd = string.format('mix test %s:%d', file, line)
+  vim.fn.setreg('+', cmd) -- copies the command to your system clipboard
+  vim.notify('Copied: ' .. cmd, vim.log.levels.INFO, { title = "Mix Test" })
+end, { desc = 'Copy mix test command for current file/line' })

@@ -37,14 +37,14 @@ return {
     config = function()
       require("mason").setup()
       require("mason-lspconfig").setup {
-        ensure_installed = { "lua_ls", "elixirls", "ts_ls", "harper_ls", "taplo", "denols", "erlangls" },
+        ensure_installed = { "lua_ls", "elixirls", "ts_ls", "harper_ls", "taplo", "denols", "elp" },
       }
       local lspconfig = require("lspconfig")
       local capabilities = require("cmp_nvim_lsp").default_capabilities()
       require("lsp-format").setup({})
 
       local on_attach = function(client, bufnr)
-        if client["name"] ~= 'erlangls' then
+        if client["name"] ~= 'elp' then
           require("lsp-format").on_attach(client, bufnr)
         end
 
@@ -58,11 +58,11 @@ return {
         -- other configuration for on_attach
       end
 
-      vim.lsp.config('erlangls', {
+      vim.lsp.config('elp', {
         capabilities = capabilities,
         on_attach = on_attach,
       })
-      vim.lsp.enable('erlangls')
+      vim.lsp.enable('elp')
 
       vim.lsp.config('taplo', {
         capabilities = capabilities,
