@@ -190,3 +190,11 @@ run = ['layout floating']
 [[on-window-detected]]
 if.app-id = 'com.spotify.client'
 run = ['layout floating']
+
+[[on-window-detected]]
+if.app-id = 'com.apple.iphonesimulator'
+run = ['layout floating']
+
+[[on-window-detected]]
+if.app-id = 'com.cockos.LICEcap'
+run = ['layout floating']

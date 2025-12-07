@@ -1,5 +1,10 @@
 return {
   {
+    "pmizio/typescript-tools.nvim",
+    dependencies = { "nvim-lua/plenary.nvim", "neovim/nvim-lspconfig" },
+    opts = {},
+  },
+  {
     "bassamsdata/namu.nvim",
     config = function()
       require("namu").setup({
@@ -105,17 +110,17 @@ return {
         capabilities = capabilities,
         on_attach = on_attach,
       })
-      vim.lsp.enable('solargraph')
+      -- vim.lsp.enable('solargraph')
 
       vim.lsp.config('ts_ls', {
         -- Set default capabilities for cmp lsp completion source
         capabilities = capabilities,
         on_attach = on_attach,
-        single_file_support = false,
+        single_file_support = true,
         root_dir = lspconfig.util.root_pattern("package.json"),
       })
 
-      vim.lsp.enable('ts_ls')
+      -- vim.lsp.enable('ts_ls')
 
       vim.lsp.config('denols', {
         on_attach = on_attach,
