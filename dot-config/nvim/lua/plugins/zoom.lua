@@ -1,6 +1,5 @@
 return {
   'nvim-focus/focus.nvim',
-  version = '*',
   config = function()
     require("focus").setup({
       enable = true,          -- Enable module

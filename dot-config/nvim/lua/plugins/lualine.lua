@@ -5,9 +5,6 @@ return {
     config = function()
       require('lualine').setup {
         extensions = { 'quickfix', 'fugitive', 'toggleterm', 'lazy', 'mason', 'nvim-tree', 'trouble' },
-        options = {
-          theme = "catppuccin"
-        }
       }
     end
   }
